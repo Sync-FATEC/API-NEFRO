@@ -11,9 +11,7 @@
 
 <h2>:movie_camera: MVP </h2>
 
-<img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/c5c1bd23-f2ad-4a4c-af64-48bbba708892" alt="MVP">
-
-
+<img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/b2d2e5f4-7af6-4558-b9a9-120c6d9d8c04" alt="MVP">
 
 <h2>:computer: Tecnologias utilizadas: </h2>
 
