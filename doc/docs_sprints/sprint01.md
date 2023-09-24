@@ -42,3 +42,10 @@ Preparamos uma documentação completa no GitHub. Ela abrange informações deta
         </tr>
     </tbody>
 </table>
+
+### Apresentação em vídeo
+<p>Para assistir à apresentação da sprint 1, <a href="https://www.youtube.com/watch?v=nfy2F8guYEU">clique aqui</a>.</p>
+
+
+
+
