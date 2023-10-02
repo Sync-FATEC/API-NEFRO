@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block head %}
+    <!-- CSS/Scrips/Titles unicos de cada pagina -->
+    {% endblock %}
+    
+</head>
+<body>
+    <header>
+
+    </header>
+    
+    <!-- POP UP DO PYTHON -- CODIGO PRA PASSAR MENSAGEM PARA O USUARIO SE NECESSARIO -->
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul id="messages" class="list-unstyled">
+        {% for message in messages %}
+            <li class="alert alert-success">{{ message }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {% endwith %}
+    <!-- -->
+
+    {% block body %}
+    <!-- CONTEUDO AQUI -->
+    {% endblock %}
+
+    <footer>
+
+    </footer>
+</body>
+</html>
