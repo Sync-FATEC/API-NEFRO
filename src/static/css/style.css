@@ -1,15 +1,153 @@
 /* Estilos gerais */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:opsz,wght@6..12,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:opsz,wght@6..12,600;6..12,800&display=swap'); 
 
+:root{
+    --cor-fundo:#F5F3F0;
+    --espaço-titulo:20px;
+    --padding-pag: 50px;
+    --cor-fonte: #3F3F46;
+    --cor-fonte-titulo: #148387;
+}
+*{
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    }
+.container{
+    padding:var(--padding-pag);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
+}
+/*Esse container muda o background da section*/
+.container-background{
+    padding:var(--padding-pag);
+    background-color: var(--cor-fundo);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
+}
+/*Esse container muda o background da section que não tem imagens*/
+.container-background-texto{
+    padding:var(--padding-pag);
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    font-weight: 600;
+    line-height: 148.023%; /* espaçamento */
+}
+/*Esse container muda a section que não tem imagens*/
+.container-texto{
+    padding:var(--padding-pag);
+    color: var(--cor-fonte);
+    font-weight: 600;
+    line-height: 148.023%; /* espaçamento */
+}
+/* Estilizando o texto de todas as section */
+.text {
+    width: 823px;
+    color: var(--cor-fonte);
+    font-weight: 600;
+    line-height: 148.023%; /* espaçamento */
+}
+/* Estilizando todas as imagens do section */
+.imagem-rim{
+    width: 300px;
+}
+.imagem-irc{
+    width: 300px;
+}
+h1{
+    padding-bottom: var(--espaço-titulo);
+    overflow: hidden;
+    color: var(--cor-fonte-titulo);
+    font-family: Bebas Neue;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+}
+h2{
+    padding-bottom: var(--espaço-titulo);
+    color: var(--cor-fonte);
+    text-overflow: ellipsis;
+    font-size: 32px;
+    font-weight: 650;
+    line-height: normal;
+}
+h3{
+    padding-bottom: var(--espaço-titulo);
+    color: var(--cor-fonte-titulo);
+    font-size: 32px;
+    font-weight: 650;
+    line-height: normal;
+}
+h4{
+    text-align: left;
+    padding: 32px 32px 32px 32px;
+    color: var(--cor-fonte);
+    font-size: 30px;
+    font-weight: 650;
+    line-height: 148.023%; /* 56.249px */
+}
+/* esse container é uma excessão para as janelas de tratamento apenas da página home*/
+.container-tratamentos{
+    padding:var(--padding-pag);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     
+}
+/* tratamento é uma section que está dentro do container tratamentos que faz a borda e o formato*/
+.tratamento{
+    text-align: center; 
+    width: 530px;
+    height: 530px;
+    border-radius: 32px;
+    border-bottom: 5px solid #148387;
+    background: #FAFAFA;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
+    }
+.hemodialise{
+    width: 530px;
+    height: 530px;
+    border-radius: 32px;
+    border-bottom: 5px solid #148387;
+    background: #FAFAFA;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
+    }
+/* Estilizando o texto de todas as section dos tratamentos */
+.text-tratamento{
+    padding: 16px 32px 0 32px;
+    color: var(--cor-fonte);
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 148.023%; /* 35.525px */
+}
+/* Estilizando as imagens de todas as section dos tratamentos*/
+.image-tratamento{
+    width: 500px;
+}
+.image-hemodialise{
+    width: 500px;
+}
 /* Estilos para o header */
 header {
     background-color: #fafafa; 
     color: #158387; 
-    padding: 16px 0;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,13 +156,11 @@ header {
 .logo img {
     max-width: 90px; 
     height: auto;
-    margin-left: 130px; 
 }
 
 .menu ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    
 }
 
 .menu ul li {
@@ -37,15 +173,10 @@ header {
 }
 
 .menu a {
-    color: #3f3f46;
+    color: var(--cor-fonte);
     text-decoration: none;
-    font-size: 22px;
-}
-
-.menu a {
-    color: #3f3f46;
-    text-decoration: none;
-    font-size: 22px;
+    font-size: 20px;
+    
 }
 
 .header-divider {
@@ -59,17 +190,16 @@ footer {
     background-color: #158387; 
     color: #fff; 
     text-align: center;
-    padding: 10px 0;
-    position: absolute;
+    padding: 15px 50px;
     bottom: 0;
     width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .footer-center {
-    font-size: 18px;
-    font-weight: bold;
     flex-grow: 1; 
     text-align: center; 
     align-items: center;
