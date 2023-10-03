@@ -1,0 +1,91 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o header */
+header {
+    background-color: #fafafa; 
+    color: #158387; 
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 90px; 
+    height: auto;
+    margin-left: 130px; 
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 22px; 
+}
+
+.menu ul li:last-child {
+    margin-right: 0; 
+}
+
+.menu a {
+    color: #3f3f46;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.menu a {
+    color: #3f3f46;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.header-divider {
+    background-color: #158387;
+    height: 4px;
+    width: 100%;
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #158387; 
+    color: #fff; 
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-center {
+    font-size: 18px;
+    font-weight: bold;
+    flex-grow: 1; 
+    text-align: center; 
+    align-items: center;
+}
+
+.footer-left {
+    width: 120px; 
+    margin-left: 130px;
+}
+
+.footer-right {
+    max-width: 100px; 
+    height: auto;
+    margin-right: 130px;
+}
+
+.clearfix {
+    clear: both;
+}

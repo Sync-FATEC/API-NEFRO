@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="../static/css/style.css">
     {% block head %}
     <!-- CSS/Scrips/Titles unicos de cada pagina -->
     {% endblock %}
@@ -11,7 +11,24 @@
 </head>
 <body>
     <header>
-
+        <div class="logo">
+            <a href="index.html">
+                <img src="../static/img/logo padrao.svg" alt="Logo">
+            </a>
+            
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="/drcBrasil">DRC no Brasil</a></li>
+                <li><a href="/proadi">Proadi</a></li>
+                <li><a href="/comunidade">Comunidade</a></li>
+                <li><a href="/perguntasFrequentes">Perguntas frequentes</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <a href="#">Login</a>
+        </div>
+        <div class="clearfix"></div>
     </header>
     
     <!-- POP UP DO PYTHON -- CODIGO PRA PASSAR MENSAGEM PARA O USUARIO SE NECESSARIO -->
@@ -31,7 +48,20 @@
     {% endblock %}
 
     <footer>
-
+        <div class="footer-left">
+            <img src="../static/img/logo-branca.svg" alt="Logo à esquerda">
+        </div>
+        <div class="footer-center">
+            <p>
+                &copy; 2023 IRC. Todos os direitos Reservados.
+            </p>
+        </div>
+        <div class="footer-right">
+            <a href=""> <!-- Link para Instagram -->
+                <img src="../static/img/siga-nos.svg" alt="Logo à direita">
+            </a>
+        </div>
+        <div class="clearfix"></div>
     </footer>
 </body>
 </html>
