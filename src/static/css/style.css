@@ -151,10 +151,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 5px solid #158387;
 }
 
 .logo img {
-    max-width: 90px; 
+    max-width: 75px; 
     height: auto;
 }
 
@@ -192,7 +193,6 @@ footer {
     text-align: center;
     padding: 15px 50px;
     bottom: 0;
-    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -205,15 +205,13 @@ footer {
     align-items: center;
 }
 
-.footer-left {
-    width: 120px; 
-    margin-left: 130px;
+.footer-left img {
+    width: 50px;
 }
 
 .footer-right {
     max-width: 100px; 
     height: auto;
-    margin-right: 130px;
 }
 
 .clearfix {
