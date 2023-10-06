@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/css/login.css">
+{% endblock %}
+
+{% block body %}
+    <main>
+        <section>
+            <p>Entrar na minha conta</p>
+            <form action="" method="post">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+                <input type="submit" value="Entrar">
+            </form>
+            <a href="/cadastro">Não tem conta? Crie aqui</a>
+        </section>
+    </main>
+{% endblock %}

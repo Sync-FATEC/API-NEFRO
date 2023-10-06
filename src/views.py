@@ -20,3 +20,7 @@ def comunidade():
 @app.route('/perguntasFrequentes')
 def perguntasFrequentes():
     return render_template('perguntasFrequentes.html')
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
