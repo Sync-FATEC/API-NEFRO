@@ -61,12 +61,9 @@
     font-weight: 600;
     line-height: 148.023%; /* espaçamento */
 }
-/* Estilizando todas as imagens do section */
-.imagem-rim{
-    width: 300px;
-}
-.imagem-irc{
-    width: 300px;
+
+ul{
+    padding-left: 25px;
 }
 h1{
     padding-bottom: var(--espaço-titulo);
