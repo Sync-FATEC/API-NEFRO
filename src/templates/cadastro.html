@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="../static/css/login.css">
+{% endblock %}
+
+{% block body %}
+    <main>
+        <section>
+            <p>Cadastrar </p>
+            <form action="" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+                <label for="senha">Confirmar senha</label>
+                <input type="password" name="senha" id="senha">
+                <input type="submit" value="Entrar">
+            </form>
+            <a href="/login">Já tem conta? acesse aqui</a>
+        </section>
+    </main>
+{% endblock %}
