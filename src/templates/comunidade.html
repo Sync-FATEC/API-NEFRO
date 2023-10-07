@@ -2,8 +2,33 @@
 
 {% block head %}
 <title>Comunidade</title>
+<link rel="stylesheet" href="../static/css/blog.css">
 {% endblock %}
 
 {% block body %}
-{% endblock %}
+<section class="container-texto">
+    <h1>Comunidade</h1>
+    <p>Contribua com nossa comunidade escrevendo a história de seu filho(a)!
+        Para publicar é necessário efetuar o login ou se cadastrar em nosso
+        site.</p>
+</section>
 
+<section class="container-comunidade">
+    <section class="comunidade">
+        <div class="text-comunidade">
+            <div class="text1-comunidade">
+                <img src="../static/img/usuario.png" alt="usuario">
+                <p>Margarida Braga dos Reis</p>
+            </div>
+        
+            <div class="text2-comunidade">
+                <p>História do meu filho - Vitor Daniel dos Reis da Silva |
+                    Nascimento: 24/02/2017 </p>
+            </div>
+        </div>
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+    </section>
+</section>
+{% endblock %}
