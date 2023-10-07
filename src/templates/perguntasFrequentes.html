@@ -6,14 +6,19 @@
 {% endblock %}
 
 {% block body %}
+
 <main>
     <section class="container">
+
         <h1>PERGUNTAS FREQUENTES</h1>
+        {% for titulo, desc in dicionario.items() %}
         <details>
-            <summary>Titulo <i class="fa-solid fa-chevron-down"></i></summary>
+            <summary> {{ titulo }} <id class="fa-solid fa-chevron-down"></i></summary>
             <hr>
-            <p>Descrição</p>
+            <p> {{ desc }} </p>
         </details>
+        {% endfor %}
     </section>
 </main>
+
 {% endblock %}
