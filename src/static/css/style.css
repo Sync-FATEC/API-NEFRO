@@ -188,10 +188,49 @@ header {
     
 }
 
+/* Explicar e mostrar onde está essa clase. */
 .header-divider {
     background-color: #158387;
     height: 4px;
     width: 100%;
+}
+
+
+.profile button{
+    border: none;
+    background-color: var(--cor-fundo);
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile i {
+    color: var(--cor-fonte-titulo);
+    font-size: 22px;
+    margin: 0 15px;
+}
+
+.profile i:first-child {
+    font-size: 30px;
+}
+
+
+.login_box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-fundo);
+    width: 150px;
+    height: 70px;
+    border-radius: 0 0 25px 25px;
+}
+
+.login_box a {
+    color: var(--cor-fonte-titulo);
+    text-decoration: none;
+    margin-top: 5px;
 }
 
 /* Estilos para o footer */
