@@ -10,7 +10,6 @@
 </div>
 
 <h2>:movie_camera: MVP </h2>
-
 <img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/b2d2e5f4-7af6-4558-b9a9-120c6d9d8c04" alt="MVP">
 
 <h2>:computer: Tecnologias utilizadas: </h2>
@@ -61,49 +60,49 @@
       <td align='center'>Criação da Pagina de Perguntas Frequentes</td>
       <td>Eu, enquanto usuario, gostaria de uma area onde posso encontrar as perguntas mais frequentes sobre o assunto,
         para possivelmente solucionar as minhas.</td>
-      <td align="center">➖</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>2</td>
       <td align='center'>Coletar as informações sobre os centros transplantadores de crianças</td>
       <td>Eu, enquanto usuario, quero ter informações sobre os centros transplatadores de crianças, para poder encontrar
         onde tratar meu filho.</td>
-      <td align="center">➖</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>2</td>
       <td align='center'>Informaçãos sobre o projeto Proadi SUS Hospital Samaritano</td>
       <td>Eu, enquanto usuario, gostaria de obter informações exclusivas sobre o projeto Proadi SUS Hospital Samaritano,
         para levantar de dados para futuras pesquisas</td>
-      <td align="center">➖</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>2</td>
       <td align='center'>Criação de Home Page</td>
       <td>Eu, enquanto usuário, gostaria de visualizar uma introdução ao site para que eu possa ter acesso ao conteúdo
         dele.</td>
-      <td align="center">➖</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>2</td>
       <td align='center'>Criação da Página do Blog</td>
       <td>Eu, enquanto usuário, gostaria de visualizar um ambiente interativo para que eu possa ter acesso à história de
         outros usuários.</td>
-      <td align="center">➖</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>2</td>
       <td align='center'>Criação da Pagina de Dados</td>
       <td>Eu, enquanto usuario, gostaria de ter informações sobre IRC de forma prática, para que eu possa estar
         utilizando </td>
-      <td align="center">➖</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>2</td>
       <td align='center'>Criação da Pagina sobre IRC</td>
       <td>Eu, enquanto usuario, gostaria de buscar novas informações sobre IRC de forma pratica, para ter mais
         conhecimento sobre a doença.</td>
-      <td align="center">➖</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>3</td>
@@ -221,8 +220,8 @@
     <tr>
       <td align="center">02</td>
       <td>15/10/2023</td>
-      <td align="center">➖</td>
-      <td></td>
+      <td><a href="https://github.com/Sync-FATEC/API-NEFRO/blob/main/doc/docs_sprints/sprint02.md">Relatório</a></td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align="center">03</td>
@@ -240,11 +239,37 @@
 </table>
 <h2>:hammer_and_wrench: Como executar</h2>
 
-Pesquise por "Terminal" na barra de tarefas e abra o terminal.
+  <h3>Passo 1: Certifique-se de ter o Git e o Python instalados.</h3>
+    <p>Para baixar o Git, acesse <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>.</p>
+    <p>Para baixar o Python, acesse <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>.</p>
 
-Clone o repositório com o comando:
-  
-     git clone https://github.com/Sync-FATEC/API-NEFRO
+  <h3>Passo 2: Abra o Terminal</h3>
+  <p>Pesquise por "Terminal" na barra de tarefas do seu dispositivo e abra o terminal.</p>
+
+  <h3>Passo 3: Clone o Repositório</h3>
+  <pre><code>git clone https://github.com/Sync-FATEC/API-NEFRO</code></pre>
+
+  <h3>Passo 4: Entre na Pasta src</h3>
+  <pre><code>cd API-NEFRO/src</code></pre>
+
+  <h3>Passo 5: Crie o Ambiente Virtual</h3>
+  <pre><code>python -m venv venv</code></pre>
+  <pre><code>.\venv\Scripts\activate</code></pre>
+  <pre><code>pip install -r requirements.txt</code></pre>
+
+  <h3>Passo 6: Para Usuários Linux</h3>
+  <pre><code>python3 -m venv venv</code></pre>
+  <pre><code>source venv/bin/activate</code></pre>
+  <pre><code>pip install -r requirements.txt</code></pre>
+
+  <h3>Passo 7: Execute a Aplicação</h3>
+  <pre><code>flask run</code></pre>
+
+  <h3>Passo 8: Abra o Link no Navegador</h3>
+  <p>Abrir o seguinte link em seu navegador de preferência: <a href="http://127.0.0.1:5000">http://127.0.0.1:5000</a></p>
+
+  <h3>Passo 9: Encerrando o Ambiente Virtual</h3>
+  <pre><code>deactivate</code></pre>
      
 
 <h2>:busts_in_silhouette: Equipe</h2>
