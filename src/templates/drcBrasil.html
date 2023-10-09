@@ -1,35 +1,34 @@
 {% extends "base.html" %}
 
 {% block head %}
-<title>DRC Brasil</title>
+<title>Comunidade</title>
+<link rel="stylesheet" href="../static/css/drc.css">
 {% endblock %}
 
 {% block body %}
 <main>
     <section class="">
-        <div class="">
-            <h1>IRC NO BRASIL</h1>
+        <div class="text_drc2">
+            <h1>DRC NO BRASIL</h1>
         </div>
-        <div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident in excepturi eligendi explicabo commodi aliquam modi maiores, quam ab a. Blanditiis error odio dicta, consequuntur quibusdam maxime commodi dolor quae.</p>
+        <div class="text_drc">
+            <p>A IRC no Brasil enfrenta desafios signifcatvos, incluindo acesso limito á saúde, prevenção inadequada, disponibilidade limitada de tratamento como: diálise e transplante, falta de conscientização, custos financeiros, escassez de doadores de órgãos, falta de especialistas, desafios para a área infantil, comorbidades e diagnósticos tardios.Apesar dessas dificuldades, esforços estão sendo formados para melhorar o acesso aos cuidados do IRC e aumentar a conscientização sobre a prevenção e o tratamento no país</p>
         </div>
     </section>
     <section class="">
-        <div class="">
+        <div class="text_drc2">
             <h1>Gráficos</h1>
         </div>
-        <div class="">
-            <img src="" alt="gráfico1">
-            <img src="" alt="gráfico2">
-            <img src="" alt="gráfico3">
-            <img src="" alt="gráfico4">
+        <div class="text_drc2">
+            <img src="../static/img/incidencias de hemodialises.png" alt="grafico">
+            <img src="../static/img/taxa de obitos.jpg" alt="gráfico2">
         </div>
     </section>
     <section class="">
-            <div class="">
-                <h1>Clinicas que oferecem hemodiálise pediátrica</h1>
+            <div class="text_drc2">
+                <h1>Clinicas que oferecem hemodiálise</h1>
             </div>
-            <div class="">
+            <div class="form_drc">
                 <form action="">
                     <label for="Estado">Estado</label>
                     <select name="Estado" id="Estado">
@@ -62,9 +61,11 @@
                         <option value="Tocantins">Tocantins</option>
                     </select>
                 </form>
-                <form action=""></form>
-                <label for="Município">Município</label>
-                <select name="Município" id="Município">
+            </div>
+            <div class="form_drc2">
+                <form action="">
+                    <label for="Município">Município</label>
+                    <select name="Município" id="Município">
                     <option value=""></option>
                     <option value=""></option>
                     <option value=""></option>
@@ -76,10 +77,13 @@
                     <option value=""></option>
                     <option value=""></option>
                     <option value=""></option>
-                </select>
-                <form action=""></form>
-                <label for="Peso">Peso</label>
-                <select name="Peso" id="Peso">
+                    </select>
+                </form>
+            </div>
+            <div class="form_drc3">    
+                <form action="">
+                    <label for="Peso">Peso</label>
+                    <select name="Peso" id="Peso">
                     <option value=""></option>
                     <option value="12-">Kg 12 -</option>
                     <option value="12+">Kg 12 +</option>
@@ -88,17 +92,18 @@
                     <option value="25+">Kg 25 +</option>
                     <option value="30+">Kg 30 +</option>
                     <option value="35+">Kg 35 +</option>
-                </select>
+                    </select>
+                </form>
             </div>
     </section>
     <section class="">
-        <div class="">
-            <h1>Centro de transplanta infantil</h1>
+        <div class="text_drc2">
+            <h1>Clinicas de transplante</h1>
         </div>
-        <div class="">
-            <form action=""></form>
-            <label for="Estado">Estado</label>
-            <select name="Estado" id="Estado">
+        <div class="form_drc4">
+            <form action="">
+                <label for="Estado">Estado</label>
+                <select name="Estado" id="Estado">
                 <option value=""></option>
                 <option value="Acre">Acre</option>
                 <option value="Alagoas">Alagoas</option>
@@ -126,10 +131,13 @@
                 <option value="São Paulo">São Paulo</option>
                 <option value="Sergipe">Sergipe</option>
                 <option value="Tocantins">Tocantins</option>
-            </select>
-            <form action=""></form>
-            <label for="Peso">Peso</label>
-            <select name="Peso" id="Peso">
+                </select>
+            </form> 
+        </div>
+        <div class="form_drc5">
+            <form action="">
+                <label for="Peso">Peso</label>
+                <select name="Peso" id="Peso">
                 <option value=""></option>
                 <option value="12-">Kg 12 -</option>
                 <option value="12+">Kg 12 +</option>
@@ -138,7 +146,8 @@
                 <option value="25+">Kg 25 +</option>
                 <option value="30+">Kg 30 +</option>
                 <option value="35+">Kg 35 +</option>
-            </select>
+                </select>
+            </form>
         </div>
     </section>
 </main>

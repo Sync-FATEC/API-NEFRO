@@ -60,3 +60,7 @@
     justify-content: space-between;
     display: flex;
 }
+footer {
+    bottom: 0;
+    width: 93.3%;
+  }  
