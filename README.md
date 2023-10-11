@@ -263,7 +263,7 @@
   <pre><code>pip install -r requirements.txt</code></pre>
 
   <h3>Passo 7: Execute a Aplicação</h3>
-  <pre><code>flask run</code></pre>
+  <pre><code>python app.py</code></pre>
 
   <h3>Passo 8: Abra o Link no Navegador</h3>
   <p>Abrir o seguinte link em seu navegador de preferência: <a href="http://127.0.0.1:5000">http://127.0.0.1:5000</a></p>
