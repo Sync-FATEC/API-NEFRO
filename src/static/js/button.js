@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const menu = document.getElementById('menu');
     const loginLink = document.querySelector('#menu a[href="/login"]');
     const cadastrarLink = document.querySelector('#menu a[href="/cadastro"]');
+    const arrow = document.querySelector('.arrow');
 
     menuButton.addEventListener('click', function() {
         if (menu.style.display === 'block') {
@@ -12,5 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
             menu.style.display = 'block';
             cadastrarLink.style.display = 'block';
         }
+        arrow.classList.toggle('arrow_rotate');
     });
 });

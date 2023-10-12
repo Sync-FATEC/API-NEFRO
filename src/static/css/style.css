@@ -222,10 +222,11 @@ header {
     display: none; 
     background-color: var(--cor-fundo);
     width: 120px;
-    border-radius: 0 0 25px 25px;
+    border-radius: 25px;
+    padding: 5px;
     top: 75px; 
     text-align: center; 
-    padding-top: 10px; 
+    margin-top: 40px; 
 }
 
 .login_box a {
@@ -234,6 +235,15 @@ header {
     padding: 5px 0; 
     display: block; 
     font-size: 18px; 
+}
+
+.arrow {
+    transition: 350ms;
+}
+
+.arrow_rotate {
+    transform: rotate(180deg);
+    transition: 350ms;
 }
 
 /* Estilos para o footer */
