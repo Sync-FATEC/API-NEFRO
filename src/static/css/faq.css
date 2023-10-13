@@ -5,22 +5,25 @@ section.container {
 
 details {
     border-radius: 10px;   
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-fundo-cinza);
     margin-bottom: 15px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     padding: 0 30px;
     width: calc(100% - 60px);
+
 }
+
 
 details:last-child {
     margin-bottom: 0;
 }
 
-details i {
+details i { 
     z-index: 0;
     transform: rotate(0deg);
     transition: 350ms;
     font-size: 18px;
+    color: var(--cor-fonte-azul);
 }
 
 details[open] i {
@@ -30,7 +33,6 @@ details[open] i {
 
 summary {
     all: unset;
-    font-family: Nunito Sans;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -40,13 +42,21 @@ summary {
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
+    color: var(--cor-fonte-cinza);
+    font-weight: bold;
+
+    
+
 }
 
 details p {
     padding: 30px 0;
-    font-family: Nunito Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 148.023%;
+    line-height: 150%;
+}
+i {
+    text-decoration: none;
+    color: var(--cor-fonte-azul);
 }

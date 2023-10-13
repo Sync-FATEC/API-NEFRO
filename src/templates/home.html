@@ -2,60 +2,66 @@
 
 {% block head %}
 <title>Home</title>
+<link rel="stylesheet" href="../static/css/home.css">
 {% endblock %}
 
 {% block body %}
-    <!--container padrão de todas as páginas que tem título, texto e imagem. Nos sections que tiverem o background cinza utilizamos o container-background e os sections que não contem imagens container-texto e os que não tiverem texto e o background for cinza: container-background-texto-->
-<section class="container">
-    <div class="text">
-        <h1>MEU FILHO FOI DIAGNOSTICADO COM IRC! E AGORA!?</h1>
-        <p>
-            O diagnóstico da IRC depende de uma avaliação clínica que inclua uma boa análise da
-            história da criança. Para identificar possíveis doenças do trato urinário, da realização de
-            diversos exames laboratoriais de sangue, de urina e de imagem.
-            Após receber o diagnóstico de insuficiência renal do seu filho ou filha, é fundamental buscar
-            orientação médica especializada, iniciar o tratamento adequado o quanto antes.
-        </p>
-    </div>
-    <div>
-        <img src="../static/img/rim.svg" alt="rimm" />
-    </div>
-</section>
-<!--fim-->
-<section class="container-background">
-    <div class="text">
-        <h2>O que é IRC?</h2>
-        <p>A Insuficiência renal crônica é a condição na qual os rins perdem a capacidade de efetuar suas funções básicas. A insuficiência renal pode ser aguda (IRA), quando ocorre súbita e rápida perda da função renal, ou crônica (IRC), quando esta perda é lenta, progressiva e irreversível. </p>
-    </div>
-    <div>
-        <img src="../static/img/irc.png" alt="irc">
-    </div>
-</section>
-<section class="container-texto">
-        <h3>Quais são os meios de tratamento?</h3>
-        <p>Para tratarmos a doença renal crônica há duas vias, sendo uma feita através da hemodialise e outra através do tratamento conservador, confira como é feito cada uma. </p>
-</section>
-<!-- CONTAINER DAS IMAGENS DE TRATAMENTO-->
-<section class="container-tratamentos">
-    <section class="tratamento">
-        <h4>Hemodialise</h4>
-        <img class="image-tratamento" src="../static/img/hemodialise.png" alt="hemodialise">
-        <div class="text-tratamento"><p>A hemodiálise é realizado por meio de máquina que filtra o sangue, ou seja, faz o trabalho que o rim doente não pode fazer, eliminando o excesso de toxinas, sais minerais e líquidos. </p>
+<main>
+    <section class="container">
+        <div class="text">
+            <h1>MEU FILHO FOI DIAGNOSTICADO COM IRC! E AGORA!?</h1>
+            <p>
+                O diagnóstico da IRC depende de uma avaliação clínica que inclua uma boa análise da
+                história da criança. Para identificar possíveis doenças do trato urinário, da realização de
+                diversos exames laboratoriais de sangue, de urina e de imagem.
+                Após receber o diagnóstico de insuficiência renal do seu filho ou filha, é fundamental buscar
+                orientação médica especializada, iniciar o tratamento adequado o quanto antes.
+            </p>
+        </div>
+        <div>
+            <img src="../static/img/rim.svg" alt="rimm" />
         </div>
     </section>
+    <!--fim-->
+    <section class="container-background">
+        <div class="text">
+            <h2>O que é IRC?</h2>
+            <p>A Insuficiência renal crônica é a condição na qual os rins perdem a capacidade de efetuar suas funções básicas. A insuficiência renal pode ser aguda (IRA), quando ocorre súbita e rápida perda da função renal, ou crônica (IRC), quando esta perda é lenta, progressiva e irreversível. </p>
+        </div>
+        <div>
+            <img src="../static/img/irc.png" alt="irc">
+        </div>
+    </section>
+    <section class="container">
+        <div class="text">
+            <h2>Quais são os meios de tratamento?</h2>
+            <p>Para tratarmos a doença renal crônica há duas vias, sendo uma feita através da hemodialise e outra através do tratamento conservador, confira como é feito cada uma. </p>
+        </div>
+    </section>
+    <!-- CONTAINER DAS IMAGENS DE TRATAMENTO-->
+    <section class="container-tratamentos">
+        <section class="tratamento">
+            <h4>Hemodialise</h4>
+            <img class="image-tratamento" src="../static/img/hemodialise.png" alt="hemodialise">
+            <div class="text-tratamento"><p>A hemodiálise é realizado por meio de máquina que filtra o sangue, ou seja, faz o trabalho que o rim doente não pode fazer, eliminando o excesso de toxinas, sais minerais e líquidos. </p>
+            </div>
+        </section>
 
-    <section class="tratamento">
-        <h4>Tratamento conservador</h4>
-        <img class="image-hemodialise" src="../static/img/tratamentoconservador.png" alt="hemodialise">
-        <div class="text-tratamento"><p>Consiste em todas as medidas clínicas (remédios, modificação da dieta, estilo de vida), que podem ser utilizadas para retardar a perda da função renal, reduzir os sintomas e prevenir complicações.</p>
+        <section class="tratamento">
+            <h4>Tratamento conservador</h4>
+            <img class="image-hemodialise" src="../static/img/tratamentoconservador.png" alt="hemodialise">
+            <div class="text-tratamento"><p>Consiste em todas as medidas clínicas (remédios, modificação da dieta, estilo de vida), que podem ser utilizadas para retardar a perda da função renal, reduzir os sintomas e prevenir complicações.</p>
+            </div>
+        </section>
+    </section>
+    <!--FIM DO CONTAINER TRATAMENTO-->
+    <section class="container-background-texto">
+        <div class="text">
+            <h2>Nefrologia pediátrica e adulta</h2>
+            <p>A nefrologia pediátrica é a subespecialidade da pediatria responsável por prevenir, diagnosticar e tratar de condições que assolam rins e bexiga. Nesse caso, os pacientes têm entre 0 e 18 anos de idade, ou seja, bebês, crianças e adolescentes. O nefrologista de adulto concentra-se no atendimento de pacientes com mais de 18 anos de idade.
+            Lida com as doenças renais adquiridas que ocorrem na vida adulta, tem conhecimento em geriatria e no tratamento de doenças renais seja elas crônica, aguda, transplante e doenças renais que surgem com envelhecimento.</p>
         </div>
     </section>
-</section>
-<!--FIM DO CONTAINER TRATAMENTO-->
-<section class="container-background-texto">
-        <h2>Nefrologia pediátrica e adulta</h2>
-        <p>A nefrologia pediátrica é a subespecialidade da pediatria responsável por prevenir, diagnosticar e tratar de condições que assolam rins e bexiga. Nesse caso, os pacientes têm entre 0 e 18 anos de idade, ou seja, bebês, crianças e adolescentes. O nefrologista de adulto concentra-se no atendimento de pacientes com mais de 18 anos de idade.
-        Lida com as doenças renais adquiridas que ocorrem na vida adulta, tem conhecimento em geriatria e no tratamento de doenças renais seja elas crônica, aguda, transplante e doenças renais que surgem com envelhecimento.</p>
-</section>
+</main>
 {% endblock %}
 

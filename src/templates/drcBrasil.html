@@ -8,91 +8,15 @@
 {% block body %}
 <main>
     <section class="container-texto">
-            <h1>DRC NO BRASIL</h1>
-            <p>O DRC no Brasil enfrenta desafios signifcatvos, incluindo acesso limito á saúde, prevenção inadequada, disponibilidade limitada de tratamento como: diálise e transplante, falta de conscientização, custos financeiros, escassez de doadores de órgãos, falta de especialistas, desafios para a área infantil, comorbidades e diagnósticos tardios.Apesar dessas dificuldades, esforços estão sendo formados para melhorar o acesso aos cuidados do IRC e aumentar a conscientização sobre a prevenção e o tratamento no país</p>
-        
+        <h1>DRC NO BRASIL</h1>
+        <p>O DRC no Brasil enfrenta desafios significativos, incluindo acesso limitado à saúde, prevenção inadequada, disponibilidade limitada de tratamento como diálise e transplante, falta de conscientização, custos financeiros, escassez de doadores de órgãos, falta de especialistas, desafios para a área infantil, comorbidades e diagnósticos tardios. Apesar dessas dificuldades, esforços estão sendo formados para melhorar o acesso aos cuidados do IRC e aumentar a conscientização sobre a prevenção e o tratamento no país.</p>
     </section>
-    <section class="">
-            <div class="text_drc2">
-                <h3>Clinicas que oferecem hemodiálise</h3>
-            </div>
-            <div class="form_drc">
-                <form action="">
-                    <label for="Estado">Estado</label>
-                    <select name="Estado" id="Estado">
-                        <option value=""></option>
-                        <option value="Acre">Acre</option>
-                        <option value="Alagoas">Alagoas</option>
-                        <option value="Amapá">Amapá</option>
-                        <option value="Amazonas">Amazonas</option>
-                        <option value="Bahia">Bahia</option>
-                        <option value="Ceará">Ceará</option>
-                        <option value="Espírito Santo">Espírito Santo</option>
-                        <option value="Goiás">Goiás</option>
-                        <option value="Maranhão">Maranhão</option>
-                        <option value="Mato Grosso">Mato Grosso</option>
-                        <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
-                        <option value="minas Gerais">Minas Gerais</option>
-                        <option value="Pará">Pará</option>
-                        <option value="Paraíba">Paraíba</option>
-                        <option value="Paraná">Paraná</option>
-                        <option value="Pernambuco">Pernambuco</option>
-                        <option value="Piauí">Piauí</option>
-                        <option value="Rio de Janeiro">Rio de Janeiro</option>
-                        <option value="Rio Grande do Norte">Rio Grande do Norte</option>
-                        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
-                        <option value="Rondônia">Rondônia</option>
-                        <option value="Roiraima">Roiraima</option>
-                        <option value="Santa Catarina">Santa Catarina</option>
-                        <option value="São Paulo">São Paulo</option>
-                        <option value="Sergipe">Sergipe</option>
-                        <option value="Tocantins">Tocantins</option>
-                    </select>
-                </form>
-            </div>
-            <div class="form_drc2">
-                <form action="">
-                    <label for="Município">Município</label>
-                    <select name="Município" id="Município">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    </select>
-                </form>
-            </div>
-            <div class="form_drc3">    
-                <form action="">
-                    <label for="Peso">Peso</label>
-                    <select name="Peso" id="Peso">
-                    <option value=""></option>
-                    <option value="12-">Kg 12 -</option>
-                    <option value="12+">Kg 12 +</option>
-                    <option value="15+">Kg 15 +</option>
-                    <option value="20+">Kg 20 +</option>
-                    <option value="25+">Kg 25 +</option>
-                    <option value="30+">Kg 30 +</option>
-                    <option value="35+">Kg 35 +</option>
-                    </select>
-                </form>
-            </div>
-    </section>
-    <section class="">
-        <div class="text_drc2">
-            <h3>Clinicas de transplante</h3>
-        </div>
-        <div class="form_drc4">
-            <form action="">
-                <label for="Estado">Estado</label>
-                <select name="Estado" id="Estado">
-                <option value=""></option>
+    <section class="container-texto">
+        <h2>CENTRAIS DE TRANSPLANTES</h2>
+        <form action="">
+            <label for="estadoSelect">Selecione um estado:</label>
+            <select id="estadoSelect">
+                <option value="">-- Todos os Estados --</option>
                 <option value="Acre">Acre</option>
                 <option value="Alagoas">Alagoas</option>
                 <option value="Amapá">Amapá</option>
@@ -104,7 +28,7 @@
                 <option value="Maranhão">Maranhão</option>
                 <option value="Mato Grosso">Mato Grosso</option>
                 <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
-                <option value="minas Gerais">Minas Gerais</option>
+                <option value="Minas Gerais">Minas Gerais</option>
                 <option value="Pará">Pará</option>
                 <option value="Paraíba">Paraíba</option>
                 <option value="Paraná">Paraná</option>
@@ -114,29 +38,60 @@
                 <option value="Rio Grande do Norte">Rio Grande do Norte</option>
                 <option value="Rio Grande do Sul">Rio Grande do Sul</option>
                 <option value="Rondônia">Rondônia</option>
-                <option value="Roiraima">Roiraima</option>
+                <option value="Roraima">Roraima</option>
                 <option value="Santa Catarina">Santa Catarina</option>
                 <option value="São Paulo">São Paulo</option>
                 <option value="Sergipe">Sergipe</option>
                 <option value="Tocantins">Tocantins</option>
-                </select>
-            </form> 
-        </div>
-        <div class="form_drc5">
-            <form action="">
-                <label for="Peso">Peso</label>
-                <select name="Peso" id="Peso">
-                <option value=""></option>
-                <option value="12-">Kg 12 -</option>
-                <option value="12+">Kg 12 +</option>
-                <option value="15+">Kg 15 +</option>
-                <option value="20+">Kg 20 +</option>
-                <option value="25+">Kg 25 +</option>
-                <option value="30+">Kg 30 +</option>
-                <option value="35+">Kg 35 +</option>
-                </select>
-            </form>
-        </div>
+            </select>
+        </form>
+        <ul id="resultadoContainer"></ul>
     </section>
+    <script>
+        const resultadoContainer = document.getElementById("resultadoContainer");
+        
+        fetch("/static/docs/clinicas.csv")
+            .then((response) => response.text())
+            .then((csvData) => {
+                const linhas = csvData.split("\n");
+                
+                document.getElementById("estadoSelect").addEventListener("change", filtrarClínicas);
+
+                function filtrarClínicas() {
+                    const estadoSelecionado = document.getElementById("estadoSelect").value;
+                    resultadoContainer.innerHTML = "";  // Limpa o conteúdo anterior
+
+                    let estadoAtual = "";  // Para controlar o estado atual
+
+                    for (let i = 1; i < linhas.length; i++) {
+                        const colunas = linhas[i].split(",");
+                        const estado = colunas[0];
+                        const informacoes = colunas.slice(1);
+
+                        if (estadoSelecionado === "" || estado === estadoSelecionado) {
+                            if (estado !== estadoAtual) {
+                                // Adiciona o nome do estado com classe "estado" para ajustar o tamanho
+                                resultadoContainer.innerHTML += `<div class="estado">${estado}</div>`;
+                                estadoAtual = estado;
+                            }
+
+                            // Adiciona as informações das clínicas
+                            for (let j = 0; j < informacoes.length; j++) {
+                                if (j === 0) {
+                                    // Remove o ponto e espaço na frente do nome da clínica
+                                    resultadoContainer.innerHTML += `<div>${informacoes[j].replace(/^\s*\.\s*/, "")}</div>`;
+                                } else {
+                                    // Adiciona outras informações
+                                    resultadoContainer.innerHTML += `<div>${informacoes[j]}</div>`;
+                                }
+                            }
+                            
+                            // Adiciona um espaço entre as clínicas
+                            resultadoContainer.innerHTML += "<div>&nbsp;</div>";
+                        }
+                    }
+                }
+            });
+    </script>
 </main>
 {% endblock %}

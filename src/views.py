@@ -13,6 +13,18 @@ def drcBrasil():
 def comunidade():
     return render_template('comunidade.html')
 
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+@app.route('/cadastro')
+def cadastro():
+    return render_template('cadastro.html')
+
+@app.route('/historia')
+def historia():
+    return render_template('historia.html')
+
 @app.route('/perguntasFrequentes')
 def perguntasFrequentes():
     dicionario = {
@@ -26,15 +38,3 @@ def perguntasFrequentes():
         'O que é a diálise e como funciona no tratamento da IRC?': 'A diálise é um procedimento médico que filtra resíduos e excesso de líquidos do sangue quando os rins não conseguem fazê-lo. Existem dois tipos principais: hemodiálise, realizada em uma clínica especializada, e diálise peritoneal, que pode ser feita em casa. Ambos ajudam a manter o equilíbrio do corpo quando os rins não funcionam adequadamente.'
     }
     return render_template('perguntasFrequentes.html', dicionario=dicionario)
-
-@app.route('/login')
-def login():
-    return render_template('login.html')
-
-@app.route('/cadastro')
-def cadastro():
-    return render_template('cadastro.html')
-
-@app.route('/historia')
-def historia():
-    return render_template('historia.html')

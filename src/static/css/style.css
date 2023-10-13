@@ -1,16 +1,16 @@
 /* Estilos gerais */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:opsz,wght@6..12,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:opsz,wght@6..12,600;6..12,800&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:opsz,wght@6..12,600;6..12,800&display=swap');
 
-:root{
-    --cor-fundo:#F5F3F0;
-    --espaço-titulo:20px;
-    --padding-pag: 50px;
-    --cor-fonte: #3F3F46;
-    --cor-fonte-titulo: #148387;
+:root {
+    --cor-fonte-cinza: rgb(63, 63, 70);
+    --cor-fonte-azul: #148387;
+    --cor-fundo-branco: #f5f3f0;
+    --padding-fixo: 40px 70px;
 }
-*{
+
+* {
     font-family: Nunito Sans;
     font-size: 16px;
     font-style: normal;
@@ -28,177 +28,87 @@ main {
     flex-grow: 1;
 }
 
-.container{
-    padding:var(--padding-pag);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    row-gap: 10px;
-    column-gap: 30px;
-}
-/*Esse container muda o background da section*/
-.container-background{
-    padding:var(--padding-pag);
-    background-color: var(--cor-fundo);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    row-gap: 10px;
-    column-gap: 30px;
-}
-/*Esse container muda o background da section que não tem imagens*/
-.container-background-texto{
-    padding:var(--padding-pag);
-    background-color: var(--cor-fundo);
-    color: var(--cor-fonte);
-    font-weight: 600;
-    line-height: 148.023%; /* espaçamento */
-}
-/*Esse container muda a section que não tem imagens*/
-.container-texto{
-    padding:var(--padding-pag);
-    color: var(--cor-fonte);
-    font-weight: 600;
-    line-height: 148.023%; /* espaçamento */
-}
-/* Estilizando o texto de todas as section */
-.text {
-    width: 823px;
-    color: var(--cor-fonte);
-    font-weight: 600;
-    line-height: 148.023%; /* espaçamento */
-}
-
-ul{
-    padding-left: 25px;
-}
-h1{
-    padding-bottom: var(--espaço-titulo);
+h1 {
+    padding-bottom: var(--padding-titulo);
     overflow: hidden;
-    color: var(--cor-fonte-titulo);
+    color: var(--cor-fonte-azul);
     font-family: Bebas Neue;
     font-size: 48px;
     font-weight: 400;
     line-height: normal;
 }
-h2{
-    padding-bottom: var(--espaço-titulo);
-    color: var(--cor-fonte);
-    text-overflow: ellipsis;
-    font-size: 32px;
-    font-weight: 650;
+h2 {
+    padding-bottom: var(--padding-titulo);
+    overflow: hidden;
+    color: var(--cor-fonte-azul);
+    font-family: Bebas Neue;
+    font-size: 36px;
+    font-weight: 400;
     line-height: normal;
 }
-h3{
-    padding-bottom: var(--espaço-titulo);
-    color: var(--cor-fonte-titulo);
+
+h3 {
+    padding-bottom: var(--padding-titulo);
+    overflow: hidden;
+    color: var(--cor-fonte-azul);
+    font-family: Bebas Neue;
     font-size: 32px;
-    font-weight: 650;
+    font-weight: 400;
     line-height: normal;
 }
-h4{
+
+h4 {
     text-align: left;
-    padding: 32px 32px 32px 32px;
-    color: var(--cor-fonte);
+    padding: 32px;
+    color: var(--cor-fonte-cinza);
     font-size: 30px;
     font-weight: 650;
-    line-height: 148.023%; /* 56.249px */
+    line-height: 150%;
 }
-/* esse container é uma excessão para as janelas de tratamento apenas da página home*/
-.container-tratamentos{
-    padding:var(--padding-pag);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-     
+
+p {
+    font-size: 18px;
 }
-/* tratamento é uma section que está dentro do container tratamentos que faz a borda e o formato*/
-.tratamento{
-    text-align: center; 
-    width: 530px;
-    height: 530px;
-    border-radius: 32px;
-    border-bottom: 5px solid #148387;
-    background: #FAFAFA;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
-    }
-.hemodialise{
-    width: 530px;
-    height: 530px;
-    border-radius: 32px;
-    border-bottom: 5px solid #148387;
-    background: #FAFAFA;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
-    }
-/* Estilizando o texto de todas as section dos tratamentos */
-.text-tratamento{
-    padding: 16px 32px 0 32px;
-    color: var(--cor-fonte);
-    font-family: Nunito Sans;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: left;
-    line-height: 148.023%; /* 35.525px */
-}
-/* Estilizando as imagens de todas as section dos tratamentos*/
-.image-tratamento{
-    width: 500px;
-}
-.image-hemodialise{
-    width: 500px;
-}
-/* Estilos para o header */
+
+/* ------------------------------Header------------------------------ */
 header {
-    background-color: #fafafa; 
-    color: #158387; 
-    padding: 20px 50px;
+    background-color: var(--cor-fundo-branco);
+    color: var(--cor-fonte-azul);
+    padding: 5px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 5px solid #158387;
+    border-bottom: 5px solid var(--cor-fonte-azul);
 }
 
 .logo img {
-    max-width: 75px; 
+    max-width: 75px;
     height: auto;
 }
 
 .menu ul {
     list-style: none;
-    
 }
 
 .menu ul li {
     display: inline;
-    margin-right: 22px; 
+    margin-right: 22px;
 }
 
 .menu ul li:last-child {
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 .menu a {
-    color: var(--cor-fonte);
+    color: var(--cor-fonte-cinza);
     text-decoration: none;
     font-size: 20px;
-    
+    font-weight: bold;
 }
 
-/* Explicar e mostrar onde está essa clase. */
-.header-divider {
-    background-color: #158387;
-    height: 4px;
-    width: 100%;
-}
-
-
-.profile button{
+.profile button {
     border: none;
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-fundo-branco);
     width: 120px;
     height: 50px;
     border-radius: 50px;
@@ -207,34 +117,31 @@ header {
 }
 
 .profile i {
-    color: var(--cor-fonte-titulo);
-    font-size: 22px;
-    margin: 0 15px;
+    color: var(--cor-fonte-azul);
+    font-size: 24px;
+    margin: 0 10px;
 }
 
 .profile i:first-child {
-    font-size: 30px;
+    font-size: 32px;
 }
-
-
 .login_box {
     position: absolute;
-    display: none; 
-    background-color: var(--cor-fundo);
+    display: none;
+    background-color: var(--cor-fundo-branco);
     width: 120px;
     border-radius: 25px;
     padding: 5px;
     top: 75px; 
     text-align: center; 
-    margin-top: 40px; 
 }
 
 .login_box a {
-    color: var(--cor-fonte-titulo);
+    color: var(--cor-fonte-azul);
     text-decoration: none;
-    padding: 5px 0; 
-    display: block; 
-    font-size: 18px; 
+    padding: 5px 0;
+    display: block;
+    font-size: 18px;
 }
 
 .arrow {
@@ -245,23 +152,76 @@ header {
     transform: rotate(180deg);
     transition: 350ms;
 }
+/* ------------------------------FIM do HOME------------------------------ */
+.container, .container-background, .container-background-texto {
+    padding: var(--padding-fixo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+}
 
-/* Estilos para o footer */
-footer {
-    background-color: #158387; 
-    color: #fff; 
+.container-background, .container-background-texto {
+    background-color: var(--cor-fundo-branco);
+}
+
+.container-background-texto,
+.container-texto {
+    color: var(--cor-fonte-cinza);
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.container-tratamentos {
+    padding: var(--padding-fixo);
+    display: flex;
+    justify-content: space-around;
+}
+.text {
+    width: 800px;
+    color: var(--cor-fonte-cinza);
+}
+.hemodialise,
+.tratamento{
     text-align: center;
-    padding: 15px 50px;
-    bottom: 0;
+    width: 500px;
+    height: 500px;
+    border-radius: 32px;
+    border-bottom: 5px solid var(--cor-fonte-azul);
+    background: var(--cor-fundo-branco);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* Estilizando o texto de todas as section dos tratamentos */
+.text-tratamento {
+    padding: 0 20px;
+    color: var(--cor-fonte-cinza);
+    font-size: 24px;
+    text-align: left;
+    line-height: 150%;
+    justify-content: center;
+}
+/* Estilizando as imagens de todas as section dos tratamentos */
+.image-tratamento,
+.image-hemodialise {
+    width: 450px;
+}
+
+/* ------------------------------FIM do HOME------------------------------ */
+
+/* ------------------------------COMEÇO do FOOTER------------------------------ */
+footer {
+    background-color: var(--cor-fonte-azul);
+    color: var(--cor-fundo-branco);
+    text-align: center;
+    padding: 5px 70px;
     display: flex;
     align-items: center;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .footer-center {
-    flex-grow: 1; 
-    text-align: center; 
+    flex-grow: 1;
     align-items: center;
 }
 
@@ -270,6 +230,6 @@ footer {
 }
 
 .footer-right {
-    max-width: 100px; 
+    max-width: 100px;
     height: auto;
 }
