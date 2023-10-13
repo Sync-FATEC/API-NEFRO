@@ -19,9 +19,11 @@ section {
 }
 
 main label {
+    display: block; 
     font-size: 20px;
     font-weight: bold;
     color: var(--cor-fonte-cinza);
+    margin-bottom: 5px; 
 }
 
 main input:focus {
@@ -29,14 +31,13 @@ main input:focus {
 }
 
 main input {
-    display: flex;
-    flex-direction: column;
+    height: 20px;
+    margin: 5px 0 20px 0;
     width: 380px;
     height: 30px;
+    padding: 3px;
     border: none;
     border-radius: 8px;
-    margin: 5px 0 20px 0;
-    padding: 3px;
 }
 
 main input[type=submit] {
@@ -44,10 +45,12 @@ main input[type=submit] {
     justify-content: center;
     align-items: center;
     background-color: var(--cor-fonte-azul);
+    border: none;
     border-radius: 20px;
     color: var(--cor-fundo-branco);
     height: 40px;
     cursor: pointer;
+    transition: transform 0.2s;
 }
 
 main input[type=submit]:hover {
@@ -69,3 +72,15 @@ main p {
     margin-bottom: 48px;
 }
 
+main select {
+    width: 380px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    outline: none;
+    margin-bottom:20px;
+    
+}
