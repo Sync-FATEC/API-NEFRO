@@ -4,7 +4,9 @@ section {
 select#estadoSelect {
     border-radius: 10px; 
 }
-
+option{
+    text-align: center;
+}
 /* Estilos para o contêiner de resultados */
 #resultadoContainer {
     font-size: 18px; 

@@ -7,6 +7,7 @@ main{
     justify-content: space-between;
 }
 .comunidade{
+    
     padding: 20px;
     align-items: center;
     background-color: var(--cor-fundo-branco);
