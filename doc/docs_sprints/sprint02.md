@@ -86,7 +86,7 @@
         </tr>
     </tbody>
 </table>
-
+<img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/09506f98-5e1a-482c-a336-3e7a6644363f" alt="MVP">
 
 
 

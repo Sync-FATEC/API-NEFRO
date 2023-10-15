@@ -10,8 +10,7 @@
 </div>
 
 <h2>:movie_camera: MVP </h2>
-<img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/b2d2e5f4-7af6-4558-b9a9-120c6d9d8c04" alt="MVP">
-
+<img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/09506f98-5e1a-482c-a336-3e7a6644363f" alt="MVP">
 <h2>:computer: Tecnologias utilizadas: </h2>
 
 <div align="center">
@@ -250,11 +249,12 @@
   <pre><code>git clone https://github.com/Sync-FATEC/API-NEFRO</code></pre>
 
   <h3>Passo 4: Entre na Pasta src</h3>
-  <pre><code>cd API-NEFRO/src</code></pre>
+  <pre><code>cd API-NEFRO/</code></pre>
 
   <h3>Passo 5: Crie o Ambiente Virtual</h3>
   <pre><code>python -m venv venv</code></pre>
   <pre><code>.\venv\Scripts\activate</code></pre>
+  <pre><code>cd API-NEFRO/src</code></pre>
   <pre><code>pip install -r requirements.txt</code></pre>
 
   <h3>Passo 6: Para Usuários Linux</h3>
