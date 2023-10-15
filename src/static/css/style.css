@@ -52,14 +52,14 @@ h3 {
     overflow: hidden;
     color: var(--cor-fonte-azul);
     font-family: Nunito sans;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 650;
     line-height: 150%;
 }
 
 h4 {
-    text-align: left;
-    padding: 32px;
+    
+    padding: 20px;
     color: var(--cor-fonte-cinza);
     font-size: 30px;
     font-weight: 650;
@@ -158,7 +158,7 @@ header {
     transform: rotate(180deg);
     transition: 350ms;
 }
-/* ------------------------------FIM do HOME------------------------------ */
+/* ------------------------------COMEÇO do HOME------------------------------ */
 .container, .container-background, .container-background-texto {
     padding: var(--padding-fixo);
     display: flex;
@@ -196,37 +196,46 @@ header {
     padding: var(--padding-fixo);
     color: var(--cor-fonte-cinza);
     background-color: var(--cor-fundo-branco);
-    
 }
-
-.tratamento {
-    padding: var(--padding-fixo);
+.tratamentos-terapia{
+    padding:var(--padding-pag);
+    padding-bottom: 50px;
     display: flex;
-    flex-direction: column;
-    column-gap: 30px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.tratamentos-terapia-text{
+    text-align: center; 
+    padding: 20px;
+    width: 340px;
+    height: 600px;
+    border-radius: 32px;
+    border-bottom: 5px solid #148387;
+    background-color: var(--cor-fundo-branco);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
+}
+.container-tratamentos{
+    padding:var(--padding-pag);
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.tratamentos{
+    padding: 20px;
+    text-align: center; 
+    width: 530px;
+    height: 450px;
+    border-radius: 32px;
+    border-bottom: 5px solid #148387;
+    background-color: var(--cor-fundo-branco);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
+    }
+.text-tratamento{
+    padding: 20px;
 }
 
-.tratamento h2 {
-    color: var(--cor-fonte-azul);
-    padding-bottom: 15px;
-}
-.tratamento h3 {
-    color: var(--cor-fonte-cinza);
-    font-size: 26px;
-}
-
-.tratamento h4 {
-    font-size: 24px;
-    padding: 10px 0 5px 20px;
-}
-
-.tratamento li {
-    list-style-type: none;
-}
-
-.tratamento li p {
-    padding: 5px 0 5px 20px;
-}
 /* ------------------------------FIM do HOME------------------------------ */
 
 /* ------------------------------COMEÇO do FOOTER------------------------------ */
