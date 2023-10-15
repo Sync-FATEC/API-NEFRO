@@ -52,7 +52,7 @@ h3 {
     overflow: hidden;
     color: var(--cor-fonte-azul);
     font-family: Nunito sans;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 650;
     line-height: 150%;
 }
@@ -68,6 +68,7 @@ h4 {
 
 p {
     font-size: 18px;
+    text-align: justify;
 }
 a{
     text-decoration: none;
@@ -197,32 +198,35 @@ header {
     background-color: var(--cor-fundo-branco);
     
 }
-.hemodialise,
-.tratamento{
-    text-align: center;
-    width: 500px;
-    height: 500px;
-    border-radius: 32px;
-    border-bottom: 5px solid var(--cor-fonte-azul);
-    background: var(--cor-fundo-branco);
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
+
+.tratamento {
+    padding: var(--padding-fixo);
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
 }
 
-/* Estilizando o texto de todas as section dos tratamentos */
-.text-tratamento {
-    padding: 0 20px;
+.tratamento h2 {
+    color: var(--cor-fonte-azul);
+    padding-bottom: 15px;
+}
+.tratamento h3 {
     color: var(--cor-fonte-cinza);
-    font-size: 24px;
-    text-align: left;
-    line-height: 150%;
-    justify-content: center;
-}
-/* Estilizando as imagens de todas as section dos tratamentos */
-.image-tratamento,
-.image-hemodialise {
-    width: 450px;
+    font-size: 26px;
 }
 
+.tratamento h4 {
+    font-size: 24px;
+    padding: 10px 0 5px 20px;
+}
+
+.tratamento li {
+    list-style-type: none;
+}
+
+.tratamento li p {
+    padding: 5px 0 5px 20px;
+}
 /* ------------------------------FIM do HOME------------------------------ */
 
 /* ------------------------------COMEÇO do FOOTER------------------------------ */
