@@ -24,11 +24,11 @@
       </li>
       <li>
           <h3>Criação da Página de Dados:</h3>
-          <p>Desenvolver uma página para apresentar dados e estatísticas sobre a IRC.</p>
+          <p>Desenvolver uma página para apresentar dados e estatísticas sobre a DRC.</p>
       </li>
       <li>
-          <h3>Criação da Página sobre IRC:</h3>
-          <p>Criar uma página informativa sobre a IRC, abordando seus aspectos médicos e recursos disponíveis.</p>
+          <h3>Criação da Página sobre DRC:</h3>
+          <p>Criar uma página informativa sobre a DRC, abordando seus aspectos médicos e recursos disponíveis.</p>
       </li>
   </ul>
 <h2>Sprint Planning</h2>
@@ -80,13 +80,13 @@
         </tr>
         <tr>
             <td align='center'>55</td>
-            <td align='center'>Criação da Página sobre IRC</td>
+            <td align='center'>Criação da Página sobre DRC</td>
             <td>Criar a estrutura da página, mostrando onde deve ficar cada parágrafo e os titulos dos temas a serem abordados.</td>
             <td align="center">20</td>
         </tr>
     </tbody>
 </table>
-<img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/09506f98-5e1a-482c-a336-3e7a6644363f" alt="MVP">
+<img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/84a885ae-db40-4175-b702-3bcf346ca604" alt="MVP">
 
 
 

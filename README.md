@@ -10,7 +10,7 @@
 </div>
 
 <h2>:movie_camera: MVP </h2>
-<img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/09506f98-5e1a-482c-a336-3e7a6644363f" alt="MVP">
+<img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/84a885ae-db40-4175-b702-3bcf346ca604" alt="MVP">
 <h2>:computer: Tecnologias utilizadas: </h2>
 
 <div align="center">
@@ -92,14 +92,14 @@
     <tr>
       <td align='center'>2</td>
       <td align='center'>Criação da Pagina de Dados</td>
-      <td>Eu, enquanto usuario, gostaria de ter informações sobre IRC de forma prática, para que eu possa estar
+      <td>Eu, enquanto usuario, gostaria de ter informações sobre DRC de forma prática, para que eu possa estar
         utilizando </td>
       <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>2</td>
-      <td align='center'>Criação da Pagina sobre IRC</td>
-      <td>Eu, enquanto usuario, gostaria de buscar novas informações sobre IRC de forma pratica, para ter mais
+      <td align='center'>Criação da Pagina sobre DRC</td>
+      <td>Eu, enquanto usuario, gostaria de buscar novas informações sobre DRC de forma pratica, para ter mais
         conhecimento sobre a doença.</td>
       <td align="center">✔️</td>
     </tr>
@@ -254,12 +254,13 @@
   <h3>Passo 5: Crie o Ambiente Virtual</h3>
   <pre><code>python -m venv venv</code></pre>
   <pre><code>.\venv\Scripts\activate</code></pre>
-  <pre><code>cd API-NEFRO/src</code></pre>
+  <pre><code>cd src/</code></pre>
   <pre><code>pip install -r requirements.txt</code></pre>
 
   <h3>Passo 6: Para Usuários Linux</h3>
   <pre><code>python3 -m venv venv</code></pre>
   <pre><code>source venv/bin/activate</code></pre>
+  <pre><code>cd src/</code></pre>
   <pre><code>pip install -r requirements.txt</code></pre>
 
   <h3>Passo 7: Execute a Aplicação</h3>
