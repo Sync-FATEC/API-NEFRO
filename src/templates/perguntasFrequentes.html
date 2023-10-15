@@ -11,11 +11,11 @@
     <section class="container">
 
         <h1>PERGUNTAS FREQUENTES</h1>
-        {% for titulo, desc in dicionario.items() %}
+        {% for i in conteudoFaq %}
         <details>
-            <summary> {{ titulo }}<i class="fa-solid fa-chevron-down"></i></summary>
+            <summary> {{ i[0] }}<i class="fa-solid fa-chevron-down"></i></summary>
             <hr>
-            <p> {{ desc }} </p>
+            <p> {{ i[1] }} </p>
         </details>
         {% endfor %}
     </section>
