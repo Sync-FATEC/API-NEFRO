@@ -34,60 +34,44 @@
 <h2>Sprint Planning</h2>
 <table>
     <thead>
-        <tr>
-            <th>Prioridade</th>
-            <th>Requisito</th>
-            <th>Critério de Aceitação</th>
-            <th>Planning Poker</th>
-        </tr>
+    <tr>
+        <th>Sprint</th>
+        <th>Tarefa</th>
+        <th>User Story</th>
+        <th>Status</th>
+    </tr>
     </thead>
     <tbody>
 <tr>
-            <td align='center'>85</td>
-            <td align='center'>Criação da Página de Perguntas Frequentes</td>
-            <td>Desenvolver uma página contendo as perguntas frêquentes de mães que acabam de descobrir que seu filho tem IRC.</td>
-            <td align="center">13</td>
-        </tr>
-        <tr>
-            <td align='center'>80</td>
-            <td align='center'>Coletar as informações sobre os centros transplantadores de crianças</td>
-            <td>Coletar informações sobre a quantidade de centros de transplantes de crianças, identificar suas regiões de atuação e distinguir entre clínicas privadas e públicas.</td>
-            <td align="center">20</td>
-        </tr>      
-        <tr>
-            <td align='center'>75</td>
-            <td align='center'>Informações sobre o projeto Proadi SUS Hospital Samaritano</td>
-            <td>Inserir informações em uma àrea restrita para visitantes e explicar o que é o projeto e porquê ele se destacou.</td>
-            <td align="center">8</td>
-        </tr>
-        <tr>
-            <td align='center'>70</td>
-            <td align='center'>Criação de Home Page</td>
-            <td>Criar a estrutura da pagina inicial do site.</td>
-            <td align="center">20</td>
-        </tr>
-        <tr>
-            <td align='center'>65</td>
-            <td align='center'>Criação da Página do Blog</td>
-            <td>Criar a estrutura da página "comunidade" do site.</td>
-            <td align="center">20</td>
-        </tr>
-        <tr>
-            <td align='center'>60</td>
-            <td align='center'>Criação da Página de Dados</td>
-            <td>Criar a estrutura da página, mostrando onde devem ficar as tabela e os títulos dos temas abordados.</td>
-            <td align="center">20</td>            
-        </tr>
-        <tr>
-            <td align='center'>55</td>
-            <td align='center'>Criação da Página sobre DRC</td>
-            <td>Criar a estrutura da página, mostrando onde deve ficar cada parágrafo e os titulos dos temas a serem abordados.</td>
-            <td align="center">20</td>
-        </tr>
+      <td align='center'>2</td>
+      <td align='center'>Criação da Pagina de Perguntas Frequentes</td>
+      <td>Como responsável de uma criança com DRC, gostaria de uma area onde posso encontrar as perguntas mais frequentes sobre o assunto, para possivelmente solucionar as minhas duvidas.</td>
+      <td align="center">✔️</td>
+    </tr>
+    <tr>
+      <td align='center'>2</td>
+      <td align='center'>Coletar as informações sobre os centros transplantadores de crianças</td>
+      <td>Como responsável de uma criança com DRC, quero ter informações sobre os centros transplatadores de crianças, para poder encontrar onde tratar meu filho. </td>
+      <td align="center">✔️</td>
+    </tr>
+    <tr>
+      <td align='center'>2</td>
+      <td align='center'>Criação de Home Page</td>
+      <td>Como visitante do site, gostaria de inicializar o site com informações acerca do que é DRC, para que eu possa de inicio ter conhecimento sobre o assunto principal do site.</td>
+      <td align="center">✔️</td>
+    </tr>
+    <tr>
+      <td align='center'>2</td>
+      <td align='center'>Criação da Página do Blog</td>
+      <td>Como visitante do site, gostaria de um ambiente interativo, para que eu possa visualizar a história de membros cadastrados do site.</td>
+      <td align="center">✔️</td>
+    </tr>
+    <tr>
+      <td align='center'>2</td>
+      <td align='center'>Criação da Pagina sobre DRC</td>
+      <td>Como visitante do site, gostaria de ter dados informativos sobre DRC de forma prática, para que eu possa visualizar o impacto da doença no Brasil.</td>
+      <td align="center">✔️</td>
+    </tr>
     </tbody>
 </table>
 <img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/84a885ae-db40-4175-b702-3bcf346ca604" alt="MVP">
-
-
-
-
