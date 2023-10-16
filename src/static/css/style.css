@@ -198,8 +198,7 @@ header {
     background-color: var(--cor-fundo-branco);
 }
 .tratamentos-terapia{
-    padding:var(--padding-pag);
-    padding-bottom: 50px;
+    padding:var(--padding-fixo);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -210,13 +209,12 @@ header {
     width: 340px;
     height: 600px;
     border-radius: 32px;
-    border-bottom: 5px solid #148387;
+    border-bottom: 5px solid var(--cor-fonte-azul);
     background-color: var(--cor-fundo-branco);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
 }
 .container-tratamentos{
-    padding:var(--padding-pag);
-    padding-bottom: 50px;
+    padding:var(--padding-fixo);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -228,7 +226,7 @@ header {
     width: 530px;
     height: 450px;
     border-radius: 32px;
-    border-bottom: 5px solid #148387;
+    border-bottom: 5px solid var(--cor-fonte-azul);
     background-color: var(--cor-fundo-branco);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
     }
