@@ -39,69 +39,56 @@
    <tr>
       <td align='center'>1</td>
       <td align='center'>Product Backlog</td>
-      <td>Eu, enquanto cliente, quero ter uma forma de enxergar as etapas do processo para acompanhar o desenvolvimento do mesmo.</td>
+      <td>Como cliente, quero ter uma forma de enxergar as etapas do processo, para acompanhar o desenvolvimento do mesmo.</td>
       <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>1</td>
       <td align='center'>Wireframe Navegável</td>
-      <td>Eu, enquanto cliente, quero ter um protótipo do projeto para poder visualizar como ficará.</td>
+      <td>Como cliente, quero ter um protótipo do projeto, para poder visualizar como ficará.</td>
       <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>1</td>
       <td align='center'>Documentação do GitHub</td>
-      <td>Eu, enquanto cliente, quero ter a documentação do projeto para saber como utilizá-lo.</td>
+      <td>Como cliente, quero ter a documentação do projeto, para saber como utilizar.</td>
       <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>2</td>
       <td align='center'>Criação da Pagina de Perguntas Frequentes</td>
-      <td>Eu, enquanto usuario, gostaria de uma area onde posso encontrar as perguntas mais frequentes sobre o assunto,
-        para possivelmente solucionar as minhas.</td>
+      <td>Como responsável de uma criança com DRC, gostaria de uma area onde posso encontrar as perguntas mais frequentes sobre o assunto, para possivelmente solucionar as minhas duvidas.</td>
       <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>2</td>
       <td align='center'>Coletar as informações sobre os centros transplantadores de crianças</td>
-      <td>Eu, enquanto usuario, quero ter informações sobre os centros transplatadores de crianças, para poder encontrar
-        onde tratar meu filho.</td>
-      <td align="center">✔️</td>
-    </tr>
-    <tr>
-      <td align='center'>2</td>
-      <td align='center'>Informaçãos sobre o projeto Proadi SUS Hospital Samaritano</td>
-      <td>Eu, enquanto usuario, gostaria de obter informações exclusivas sobre o projeto Proadi SUS Hospital Samaritano,
-        para levantar de dados para futuras pesquisas</td>
+      <td>Como responsável de uma criança com DRC, quero ter informações sobre os centros transplatadores de crianças, para poder encontrar onde tratar meu filho. </td>
       <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>2</td>
       <td align='center'>Criação de Home Page</td>
-      <td>Eu, enquanto usuário, gostaria de visualizar uma introdução ao site para que eu possa ter acesso ao conteúdo
-        dele.</td>
+      <td>Como visitante do site, gostaria de inicializar o site com informações acerca do que é DRC, para que eu possa de inicio ter conhecimento sobre o assunto principal do site.</td>
       <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>2</td>
       <td align='center'>Criação da Página do Blog</td>
-      <td>Eu, enquanto usuário, gostaria de visualizar um ambiente interativo para que eu possa ter acesso à história de
-        outros usuários.</td>
-      <td align="center">✔️</td>
-    </tr>
-    <tr>
-      <td align='center'>2</td>
-      <td align='center'>Criação da Pagina de Dados</td>
-      <td>Eu, enquanto usuario, gostaria de ter informações sobre DRC de forma prática, para que eu possa estar
-        utilizando </td>
+      <td>Como visitante do site, gostaria de um ambiente interativo, para que eu possa visualizar a história de membros cadastrados do site.</td>
       <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>2</td>
       <td align='center'>Criação da Pagina sobre DRC</td>
-      <td>Eu, enquanto usuario, gostaria de buscar novas informações sobre DRC de forma pratica, para ter mais
-        conhecimento sobre a doença.</td>
+      <td>Como visitante do site, gostaria de ter dados informativos sobre DRC de forma prática, para que eu possa visualizar o impacto da doença no Brasil.</td>
       <td align="center">✔️</td>
+    </tr>
+    <tr>
+      <td align='center'>3</td>
+      <td align='center'>Criar permissão por cadastro.</td>
+      <td>Como membro cadastrado do site, quero um local onde possa publicar minhas experiências e interagir com outros usuarios, para que eu possa receber apoio e conselhos de outros na mesma situação.</td>
+      <td align="center">➖</td>
     </tr>
     <tr>
       <td align='center'>3</td>
@@ -113,85 +100,63 @@
     <tr>
       <td align='center'>3</td>
       <td align='center'>Buscar quantas crianças estão em tratamento conservador</td>
-      <td>Eu, enquanto usuario, quero poder visualizar quantas crianças estão atualmente em tratamento conservador</td>
+      <td>Como visitante do site, quero poder visualizar quantas crianças estão atualmente em tratamento conservador, afim de levantar dados para pesquisas futuras.</td>
       <td align="center">➖</td>
     </tr>
     <tr>
       <td align='center'>3</td>
       <td align='center'>Buscar o número de crianças em fila de transplante no Brasil</td>
-      <td>Eu, enquanto usuario, quero ter acesso ao número de crianças em fila de espera de transplante no Brasil</td>
+      <td>Como visitante do site, quero ter acesso ao número de crianças em fila de espera de transplante no Brasil, para, ter uma noção do tempo de espera, e também, a partir dos dados informados trazer a publico a necessidade de aumentar os centros transplantadores.</td>
       <td align="center">➖</td>
     </tr>
     <tr>
       <td align='center'>3</td>
       <td align='center'>Coletar o número de clínicas e hospitais que ofertem hemodiálise pediátrica por estado e
         município</td>
-      <td>Eu, enquanto usuario, quero ter acesso a clinicas e hospitais que ofertem hemodialise pediátrica, para
-        encontrar tratamento para meu filho.</td>
+      <td>Como responsavel de uma criança diagnosticada com DRC, quero ter acesso a clinicas e hospitais que ofertem hemodialise pediátrica, para encontrar tratamento para meu filho.</td>
       <td align="center">➖</td>
     </tr>
     <tr>
       <td align='center'>3</td>
       <td align='center'>Índice de mortalidade em crianças com IRC (e onde esse índice é maior)</td>
-      <td>Eu, enquanto usuario, gostaria de ter acesso ao índice de mortalidade em crianças com IRC, para levantar de
-        dados para futuras pesquisas.</td>
+      <td>Como visitante do site, gostaria de ter acesso ao índice de mortalidade em crianças com IRC, para levantar de dados para futuras pesquisas.</td>
       <td align="center">➖</td>
     </tr>
     <tr>
       <td align='center'>3</td>
       <td align='center'>Criar menu de gerenciamento nas postagens para os administradores</td>
-      <td>Eu, enquanto administrador, gostaria de ter uma forma de administrar as postagens do blog, para evitar comentários desagradáveis no ambiente.</td>
+      <td>Como administrador do site, quero ter acesso a ferramentas que me permitam excluir comentarios e postagens que possam vir a ferir a politica de integridade do site.</td>
       <td align="center">➖</td>
     </tr>
     <tr>
       <td align='center'>3</td>
-      <td align='center'>Implementar gráficos visuais</td>
-      <td>Eu, enquanto usuario, gostaria de ver os dados de forma ilustrativa, para ter melhor compreensão do produto.
+      <td align='center'>Implementar tabelas</td>
+      <td>Como visitante do site, quero ter acesso a informações de DRC por meio de tabelas, a fim de ter as informações de forma visual e pratica sobre o assunto.
       </td>
       <td align="center">➖</td>
     </tr>
     <tr>
       <td align='center'>3</td>
       <td align='center'>Criar funcionalidade de filtro por região Estado e Municipio</td>
-      <td>Eu, enquanto cliente, quero ter acesso a clinicas por região, para buscar a mais proxima a mim.</td>
+      <td>Como visitante do site, quero ter acesso a clinicas por região, para buscar a mais proxima a mim.</td>
       <td align="center">➖</td>
     </tr>
     <tr>
       <td align='center'>3</td>
       <td align='center'>Criar funcionalidade de filtro para hospitais que atendam crianças com baixo peso</td>
-      <td>Eu, enquanto cliente, quero ter acesso a clinicas que atendam crianças com menos de 10kg, para buscar a
-        clinica que atenda minhas necessidades.</td>
-      <td align="center">➖</td>
-    </tr>
-    <tr>
-      <td align='center'>4</td>
-      <td align='center'>Implementação do banco de dados das informações.</td>
-      <td align="center">➖</td>
-      <td align="center">➖</td>
-    </tr>
-    <tr>
-      <td align='center'>4</td>
-      <td align='center'>Implementação do banco de dados login</td>
-      <td align="center">➖</td>
+      <td>Como visitante do site, quero ter acesso a clinicas que atendam crianças com menos de 10kg, para buscar a clinica que atenda minhas necessidades.</td>
       <td align="center">➖</td>
     </tr>
     <tr>
       <td align='center'>4</td>
       <td align='center'>Criação do logo do projeto</td>
-      <td>Eu, enquanto cliente, quero ter uma identidade visual, para representar meu site.</td>
+      <td>Como cliente, gostaria de ter uma identidade visual, para representar meu site</td>
       <td align="center">➖</td>
     </tr>
     <tr>
       <td align='center'>4</td>
-      <td align='center'>Revisão e finalização do Product Backlog</td>
-      <td>Eu, enquanto cliente, quero ter uma forma de enxergar as etapas do processo, para acompanhar o desenvolvimento
-        do mesmo.</td>
-      <td align="center">➖</td>
-    </tr>
-    <tr>
-      <td align='center'>4</td>
-      <td align='center'>Revisão e finalização da documentação do GitHub</td>
-      <td>Eu, enquanto cliente, quero ter a documentação do projeto, para saber como utilizar.</td>
+      <td align='center'>Revisão e finalização da documentação.</td>
+      <td>Como cliente, quero ter a documentação do projeto, para saber como utilizar.</td>
       <td align="center">➖</td>
     </tr>
 
@@ -271,7 +236,6 @@
 
   <h3>Passo 9: Encerrando o Ambiente Virtual</h3>
   <pre><code>deactivate</code></pre>
-     
 
 <h2>:busts_in_silhouette: Equipe</h2>
 
