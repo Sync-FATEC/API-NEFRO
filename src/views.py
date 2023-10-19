@@ -17,8 +17,30 @@ def comunidade():
 def login():
     return render_template('login.html')
 
-@app.route('/cadastro')
+# Cadastro de usuarios;
+
+@app.route('/cadastro', methods=["POST"])
 def cadastro():
+    # Fazendo requisição do forms no template "cadastro";
+    nomeCompleto = request.form["nomeCompleto"]
+    dataNascimento = request.form["dataNascimento"]
+    cpf = request.form["cpf"]
+    endereco = request.form["endereco"]
+    email = request.form["email"]
+    parentesco = request.form["parentesco"]
+    profissao = request.form["profissao"]
+    comoChegou = request.form["comoChegou"]
+    senha = request.form["senha"]
+    confirmarSenha = request.form["confirmarSenha"]
+
+    if senha == confirmarSenha:
+        # Jogando as requisições no banco de dados;
+        # Cadastro == nome da nossa tabela;
+        # Info dentro dos parentes == Nome das nossas colunas;
+        novoUsuario = Cadastro(nome=nomeCompleto, data_nasc=dataNascimento, cpf=cpf, endereco=endereco, email=email, parantesco=parentesco, profissao=profissao, como_chegou=comoChegou, senha=senha)
+    else:
+        print("deu erro")
+
     return render_template('cadastro.html')
 
 @app.route('/historia')
