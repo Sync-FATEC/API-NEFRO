@@ -19,9 +19,12 @@ def login():
     return render_template('login.html')
 
 # Cadastro de usuarios;
-
-@app.route('/cadastro', methods=["POST"])
+@app.route('/cadastro')
 def cadastro():
+    return render_template('cadastro.html')
+@app.route('/cadastrar', methods=["POST"])
+def cadastrar():
+    
     # Fazendo requisição do forms no template "cadastro";
     nomeCompleto = request.form["nomeCompleto"]
     dataNascimento = request.form["dataNascimento"]
@@ -35,7 +38,9 @@ def cadastro():
     confirmarSenha = request.form["confirmarSenha"]
 
     # Verificando se o e-mail ja existe no banco;
-    
+    if Cadastro.query.filter_by(email=email).first():
+        flash("O email inserido já existe, Faça login!")
+        return redirect(url_for('login'))
 
     # Verificando se as senhas são iguais;
     if senha == confirmarSenha:
@@ -44,9 +49,10 @@ def cadastro():
         # Info dentro dos parentes == Nome das nossas colunas;
         novoUsuario = Cadastro(nome=nomeCompleto, data_nasc=dataNascimento, cpf=cpf, endereco=endereco, email=email, parantesco=parentesco, profissao=profissao, como_chegou=comoChegou, senha=senha)
     else:
-        print("deu erro")
+         flash('As senhas devem ser identicas!')
 
-    return render_template('cadastro.html')
+    # Redirecionando para homepage;     
+    return redirect(url_for('login'))
 
 @app.route('/historia')
 def historia():
