@@ -1,5 +1,6 @@
-from app import app
+from app import app, db
 from flask import render_template, request, redirect, url_for, session, flash
+from models import *
 
 @app.route('/')
 def index():
@@ -33,6 +34,10 @@ def cadastro():
     senha = request.form["senha"]
     confirmarSenha = request.form["confirmarSenha"]
 
+    # Verificando se o e-mail ja existe no banco;
+    
+
+    # Verificando se as senhas são iguais;
     if senha == confirmarSenha:
         # Jogando as requisições no banco de dados;
         # Cadastro == nome da nossa tabela;
