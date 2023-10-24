@@ -1,7 +1,0 @@
-DROP DATABASE IF EXISTS post;
-
-CREATE DATABASE post;
-USE post;
-
-CREATE TABLE post_table (
-);
