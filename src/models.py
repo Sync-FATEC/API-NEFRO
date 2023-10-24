@@ -1,4 +1,6 @@
 from app import db
+from sqlalchemy import Column, Integer, String, Date
+from sqlalchemy.sql import func
 
 class Usuario(db.Model):
     user_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
@@ -18,4 +20,8 @@ class Comentarios(db.Model):
     user_id = db.Column(db.Integer, nullable=False)
     post_id = db.Column(db.Integer, nullable=False)
     comentario_para = db.Column(db.Integer, nullable=False)
-    data_postada = db.column(db.DateTime(timezone=True), default=func.now())
+    data_postada = db.Column(db.DateTime(timezone=True), default=func.now())
+
+class Post(db.Model):
+    post_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    post_caracters = db.Column(db.Text, nullable=True)
