@@ -43,7 +43,7 @@ def cadastrar():
     confirmarSenha = request.form["confirmarSenha"]
 
     # Verificando se o e-mail ja existe no banco;
-    if Cadastro.query.filter_by(email=email).first():
+    if Usuario.query.filter_by(user_email=email).first():
         flash("O email inserido já existe, Faça login!")
         return redirect(url_for('login'))
 
@@ -52,7 +52,7 @@ def cadastrar():
         # Jogando as requisições no banco de dados;
         # Cadastro == nome da nossa tabela;
         # Info dentro dos parentes == Nome das nossas colunas;
-        novoUsuario = Cadastro(nome=nomeCompleto, data_nasc=dataNascimento, cpf=cpf, endereco=endereco, email=email, parantesco=parentesco, profissao=profissao, como_chegou=comoChegou, senha=senha)
+        novoUsuario = Usuario (user_nome=nomeCompleto, user_data_nasc=dataNascimento, user_cpf=cpf, user_endereco=endereco, user_email=email, user_parantesco=parentesco, user_profissao=profissao, user_como_chegou=comoChegou, user_senha=senha)
     else:
          flash('As senhas devem ser identicas!')
 
