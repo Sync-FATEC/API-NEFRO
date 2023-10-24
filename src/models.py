@@ -11,3 +11,11 @@ class Usuario(db.Model):
     user_parentesco = db.Column(db.String(20), nullable=False)
     user_profissao = db.Column(db.String(50), nullable=False)
     user_como_chegou = db.Column(db.String(50), nullable=False)
+
+class Comentarios(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    texto_comentario = db.Column(db.Text, nullable=False)
+    user_id = db.Column(db.Integer, nullable=False)
+    post_id = db.Column(db.Integer, nullable=False)
+    comentario_para = db.Column(db.Integer, nullable=False)
+    data_postada = db.column(db.DateTime(timezone=True), default=func.now())
