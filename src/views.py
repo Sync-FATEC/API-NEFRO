@@ -22,6 +22,11 @@ def login():
 @app.route('/cadastro')
 def cadastro():
     return render_template('cadastro.html')
+
+@app.route('/blog-logado')
+def blog():
+    return render_template('blog-logado.html')
+
 @app.route('/cadastrar', methods=["POST"])
 def cadastrar():
     
