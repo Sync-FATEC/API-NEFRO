@@ -1,12 +1,18 @@
 main{
     padding: var(--padding-fixo);
 }
+i {
+    text-decoration: none;
+    color: var(--cor-fonte-azul);
+}
+section p{
+  color: var(--cor-fonte-cinza);
+}
 .container-comunidade, .container-historia {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
 .comunidade{
     padding: 20px;
     align-items: center;
@@ -15,62 +21,7 @@ main{
     display: flex;
     justify-content: space-between;
     border-bottom: 3px solid var(--cor-fonte-azul);
-}
-.blog{
-    padding: 40px;
-    flex-direction: column;
-    background-color: var(--cor-fundo-branco);
-    border-radius: 32px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 3px solid var(--cor-fonte-azul);
-}
-.text-blog{
-    gap: 20px;
-    color: var(--cor-fonte-cinza);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    display: flex;
-    flex-direction: column;
-    
-}
-
-#auto-resize-input {
-    width: 100%; /* Faz o input ocupar toda a largura do container */
-    min-height: 50px; /* Altura mínima do input */
-    resize: none; /* Impede o redimensionamento manual do textarea */
-    overflow: hidden; /* Oculta a barra de rolagem quando o conteúdo não cabe */
-  }
-
-  .custom-file-upload {
-    float: right;
-    background: #FFFF;
-    width: 25px;
-    border-radius: 10px;
-    padding: 6px 12px;
-    cursor: pointer;
-  }
-.custom-file-upload i{
-    font-size: 25px;
-}
-  .custom-file-upload input[type="file"] {
-    display: none;
-  }
-
-  .image-preview {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .image-preview img {
-    max-width: 220px;
-    max-height: 400px;
-    margin: 10px;
-    border-radius: 10px;
-  }
-  
-
+}  
 .text-comunidade, .text2-comunidade,.text-historia {
     color: var(--cor-fonte-cinza);
     font-size: 16px;
@@ -80,22 +31,15 @@ main{
     flex-direction: column;
     gap: 20px;
 }
-
 .text1-comunidade {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-
-i {
-    text-decoration: none;
-    color: var(--cor-fonte-azul);
-}
 .image-historia {
     display: flex;
     justify-content: space-evenly;
 }
-
 .image {
     width: 220px;
     height: 400px;
@@ -105,4 +49,84 @@ i {
     padding: 30px;
     border-radius: 30px;
     background-color: var(--cor-fundo-branco);
+}
+
+
+
+/* CSS DA PÁGINA PARA POSTAR AS HISTÓRIAS (BLOG-LOGADO)*/
+
+.blog{
+  padding: 40px;
+  flex-direction: column;
+  background-color: var(--cor-fundo-branco);
+  border-radius: 32px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--cor-fonte-azul);
+}
+.text-blog{
+  gap: 20px;
+  color: var(--cor-fonte-cinza);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+.button-blog{
+padding-top: 20px;
+color: var(--cor-fonte-cinza);
+}
+.button-blog button{
+  width: 200px;
+  height: 40px;
+  background-color: var(--cor-fonte-azul);
+  color: #FFFF;
+  border: none;
+  border-radius: 30px;
+
+}
+
+#auto-resize-input {
+  width: 100%; /* Faz o input ocupar toda a largura do container */
+  min-height: 50px; /* Altura mínima do input */
+  resize: none; /* Impede o redimensionamento manual do textarea */
+  overflow: hidden; /* Oculta a barra de rolagem quando o conteúdo não cabe */
+}
+
+.custom-file-upload {
+  float: right;
+  background: #FFFF;
+  width: 25px;
+  border-radius: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.custom-file-upload i{
+  font-size: 25px;
+}
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.image-preview {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-preview img {
+  max-width: 220px;
+  max-height: 400px;
+  margin: 10px;
+  border-radius: 10px;
+}
+input, textarea{
+  color: var(--cor-fonte-cinza);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+input:focus, textarea:focus, select:focus{
+  border: none;
+  outline: none;
 }
