@@ -46,15 +46,23 @@ def cadastrar():
     if Usuario.query.filter_by(user_email=email).first():
         flash("O email inserido já existe, Faça login!")
         return redirect(url_for('login'))
+    
+    # Verificando se o cpf ja existe no banco;
+    if Usuario.query.filter_by(user_cpf=cpf).first():
+        flash("O cpf inserido já existe, Faça login!")
+        return redirect(url_for('login'))
 
     # Verificando se as senhas são iguais;
     if senha == confirmarSenha:
         # Jogando as requisições no banco de dados;
         # Cadastro == nome da nossa tabela;
         # Info dentro dos parentes == Nome das nossas colunas;
-        novoUsuario = Usuario (user_nome=nomeCompleto, user_data_nasc=dataNascimento, user_cpf=cpf, user_endereco=endereco, user_email=email, user_parantesco=parentesco, user_profissao=profissao, user_como_chegou=comoChegou, user_senha=senha)
+        novoUsuario = Usuario (user_nome=nomeCompleto, user_data_nasc=dataNascimento, user_cpf=cpf, user_endereco=endereco, user_email=email, user_parentesco=parentesco, user_profissao=profissao, user_como_chegou=comoChegou, user_senha=senha)
+        db.session.add(novoUsuario)
+        db.session.commit()
     else:
          flash('As senhas devem ser identicas!')
+
 
     # Redirecionando para homepage;     
     return redirect(url_for('login'))

@@ -10,12 +10,12 @@ user_id int primary key  auto_increment,
 user_nome text (100) not null,
 user_data_nasc date not null,
 user_endereco text (100) not null,
-user_cpf int (11) not null,
-user_email varchar (100) not null,
+user_cpf varchar (11) not null unique,
+user_email varchar (100) not null unique,
 user_senha varchar (26) not null,
-user_parentesco set ('Pai', 'Mãe', 'Filho(a)', 'Cônjugue', 'Outro') default null,
+user_parentesco varchar (20) not null,
 user_profissao text (50) not null,
-user_como_chegou set ('internt', 'Redes Sociais', 'Indicação de Amigo', 'Indicação Profissional') default null
+user_como_chegou varchar (50) not null
 );
 
 
