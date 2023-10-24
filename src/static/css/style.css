@@ -16,6 +16,7 @@
     font-style: normal;
     padding: 0;
     margin: 0;
+
 }
 
 body {
@@ -29,8 +30,6 @@ main {
 }
 
 h1 {
-    padding-bottom: var(--padding-titulo);
-    overflow: hidden;
     color: var(--cor-fonte-azul);
     font-family: Bebas Neue;
     font-size: 48px;
@@ -38,40 +37,41 @@ h1 {
     line-height: normal;
 }
 h2 {
-    padding-bottom: var(--padding-titulo);
-    overflow: hidden;
     color: var(--cor-fonte-cinza);
     font-family: Nunito Sans;
     font-size: 30px;
-    font-weight: 650;
     line-height: 150%;
 }
 
 h3 {
-    padding-bottom: var(--padding-titulo);
-    overflow: hidden;
     color: var(--cor-fonte-azul);
     font-family: Nunito sans;
     font-size: 30px;
-    font-weight: 650;
     line-height: 150%;
 }
 
 h4 {
-    
-    padding: 20px;
     color: var(--cor-fonte-cinza);
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 650;
     line-height: 150%;
 }
-
+h5{
+    color: var(--cor-fonte-azul);
+    font-size: 24px;
+    font-weight: 650;
+    line-height: 150%;
+}
 p {
     font-size: 18px;
     text-align: justify;
 }
 a{
     text-decoration: none;
+}
+li{
+    list-style-type: none;
+    padding: 20px;
 }
 /* ------------------------------Header------------------------------ */
 header {
@@ -159,79 +159,33 @@ header {
     transition: 350ms;
 }
 /* ------------------------------COMEÇO do HOME------------------------------ */
-.container, .container-background, .container-background-texto {
+.container, .container-background {
+    color: var(--cor-fonte-cinza);
     padding: var(--padding-fixo);
     display: flex;
     justify-content: space-between;
     align-items: center;
     column-gap: 30px;
 }
-
+.container-texto{
+    padding: var(--padding-fixo);
+}
 .container-background, .container-background-texto {
     background-color: var(--cor-fundo-branco);
 }
 
-.container-background-texto,
-.container-texto {
+.container-background-texto, .container-texto {
     color: var(--cor-fonte-cinza);
     font-weight: 600;
     line-height: 150%;
     padding-bottom: 20px;
 }
 
-.container-tratamentos {
-    padding: var(--padding-fixo);
-    display: flex;
-    justify-content: space-around;
-}
-.text {
-    width: 800px;
-    color: var(--cor-fonte-cinza);
-}
-.text-sem-img {
-    padding: var(--padding-fixo);
-    color: var(--cor-fonte-cinza);
-}
 .text-sem-img-background {
     padding: var(--padding-fixo);
     color: var(--cor-fonte-cinza);
     background-color: var(--cor-fundo-branco);
-}
-.tratamentos-terapia{
-    padding:var(--padding-fixo);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.tratamentos-terapia-text{
-    text-align: center; 
-    padding: 20px;
-    width: 340px;
-    height: 600px;
-    border-radius: 32px;
-    border-bottom: 5px solid var(--cor-fonte-azul);
-    background-color: var(--cor-fundo-branco);
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
-}
-.container-tratamentos{
-    padding:var(--padding-fixo);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 
-}
-.tratamentos{
-    padding: 20px;
-    text-align: center; 
-    width: 530px;
-    height: 450px;
-    border-radius: 32px;
-    border-bottom: 5px solid var(--cor-fonte-azul);
-    background-color: var(--cor-fundo-branco);
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
-    }
-.text-tratamento{
-    padding: 20px;
 }
 
 /* ------------------------------FIM do HOME------------------------------ */
