@@ -32,6 +32,10 @@ def blog():
 def hist():
     return render_template('historia-logado.html')
 
+@app.route('/quemsomos')
+def quemsomos():
+    return render_template('quemsomos.html')
+
 @app.route('/cadastrar', methods=["POST"])
 def cadastrar():
     

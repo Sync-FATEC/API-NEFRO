@@ -1,12 +1,12 @@
 main{
     padding: var(--padding-fixo);
 }
-section{
-  padding: 20px 0;
-}
 i {
     text-decoration: none;
     color: var(--cor-fonte-azul);
+}
+h3{
+  padding: 20px 0;
 }
 section p{
   color: var(--cor-fonte-cinza);

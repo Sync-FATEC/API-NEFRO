@@ -68,10 +68,14 @@ p {
 }
 a{
     text-decoration: none;
+    color: var(--cor-fonte-cinza);
 }
 li{
     list-style-type: none;
     padding: 20px;
+}
+i{
+    color: var(--cor-fonte-azul);
 }
 /* ------------------------------Header------------------------------ */
 header {
@@ -218,7 +222,34 @@ footer {
     font-size: 20px;
     color: var(--cor-fonte-azul); 
 }
+
+
 .fa-brands{
     color: var(--cor-fonte-azul);
     font-size: 20px;
 }
+
+/* PÁGINA QUEM SOMOS */
+.text-sem-img-background i{
+    font-size: 30px;
+}
+.text-sem-img-background a{
+    font-size: 26px;
+}
+
+.container-equipe{
+    padding:0 70px 40px 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.equipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--cor-fonte-cinza);
+}
+
