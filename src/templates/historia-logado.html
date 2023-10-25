@@ -47,6 +47,25 @@
 <section>
     <h3>Comentários</h3>
 </section>
+<section class="container-comentarios">
+    <section class="blog">
+        <div class="text-blog">
+            <div class="text1-comunidade">
+                <img src="../static/img/usuario.png" alt="usuario">
+                <p>Seu user</p>
+            </div>
+        <form action="" method="post">
+
+            <label for="comentario"></label>
+            <textarea id="auto-resize-input" oninput="autoResize(this)" placeholder="Digite um  comentário"></textarea>
+            <div class="button-blog">
+            <button type="submit" value="publicar">Publicar</button>
+            </div>
+        </form>
+        </div>
+    </section>
+
+
 <section class="comunidade">
     <div class="text-comunidade">
 
@@ -63,6 +82,13 @@
    
 
 </section>
+</section>
+<script>
+    function autoResize(textarea) {
+        textarea.style.height = 'auto'; // Redefine a altura para automática
+        textarea.style.height = textarea.scrollHeight + 'px'; // Define a altura com base no conteúdo
+        }
+</script>
 </main>
 
 {% endblock %}

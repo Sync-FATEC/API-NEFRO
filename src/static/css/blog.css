@@ -1,6 +1,9 @@
 main{
     padding: var(--padding-fixo);
 }
+section{
+  padding: 20px 0;
+}
 i {
     text-decoration: none;
     color: var(--cor-fonte-azul);
@@ -14,7 +17,7 @@ section p{
     justify-content: space-between;
 }
 .comunidade{
-    padding: 20px;
+    padding: 30px;
     align-items: center;
     background-color: var(--cor-fundo-branco);
     border-radius: 32px;
@@ -56,7 +59,7 @@ section p{
 /* CSS DA PÁGINA PARA POSTAR AS HISTÓRIAS (BLOG-LOGADO)*/
 
 .blog{
-  padding: 40px;
+  padding: 30px;
   flex-direction: column;
   background-color: var(--cor-fundo-branco);
   border-radius: 32px;
@@ -129,4 +132,12 @@ input, textarea{
 input:focus, textarea:focus, select:focus{
   border: none;
   outline: none;
+}
+
+/* CSS DA HISTORIA LOGADO PARA O COMENTÁRIO NO POST */
+
+.container-comentarios{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }

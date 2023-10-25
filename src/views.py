@@ -27,6 +27,11 @@ def cadastro():
 def blog():
     return render_template('blog-logado.html')
 
+
+@app.route('/historia-logado')
+def hist():
+    return render_template('historia-logado.html')
+
 @app.route('/cadastrar', methods=["POST"])
 def cadastrar():
     
