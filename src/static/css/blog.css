@@ -39,6 +39,26 @@ section p{
     align-items: center;
     gap: 20px;
 }
+
+.text1-comunidade .sideMenu  {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  background-color: var(--cor-fundo-branco);
+  border: none;
+  cursor: pointer;
+}
+
+.text1-comunidade .sideMenu i  {
+  align-self: flex-end;
+  margin-bottom: 5px; 
+}
+
+.text1-comunidade .sideOption .deactive {
+  display: none;
+}
+
+
 .image-historia {
     display: flex;
     justify-content: space-evenly;

@@ -41,3 +41,5 @@ def cadastrar():
 
     # Redirecionando para homepage;     
     return redirect(url_for('index'))
+
+    
