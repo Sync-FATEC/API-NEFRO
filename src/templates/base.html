@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script src="../static/js/profileButton.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
@@ -16,7 +17,6 @@
             <a href="/">
                 <img src="../static/img/logo padrao.svg" alt="Logo">
             </a>
-            
         </div>
         <nav class="menu">
             <ul>
@@ -32,11 +32,15 @@
                 <i class="arrow fa-solid fa-chevron-down"></i>
             </button>
             <div class="login_box" id="menu">
+                {% if user == None %}    
                 <a href="/cadastro">Cadastrar</a>
                 <a href="/login">Entrar</a>
+                {% else %}
+                <a href="">{{user.user_nome}}</a>
+                <a href="">{{user.user_email}}</a>
+                {% endif %}
             </div>
         </div>
-        <script src="../static/js/button.js"></script>
     </header>
     
     <!-- POP UP DO PYTHON -- CODIGO PRA PASSAR MENSAGEM PARA O USUARIO SE NECESSARIO -->
