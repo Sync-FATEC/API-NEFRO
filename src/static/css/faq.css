@@ -3,16 +3,19 @@ section.container {
     align-items: start;
 }
 
+h1 {
+    margin-bottom: 15px;
+}
+
 details {
-    border-radius: 10px;   
-    background-color: var(--cor-fundo-cinza);
+    border-radius: 32px;
+    background-color: var(--cor-fundo-branco);
     margin-bottom: 15px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     padding: 0 30px;
     width: calc(100% - 60px);
-
+    border-bottom: 3px solid var(--cor-fonte-azul);
 }
-
 
 details:last-child {
     margin-bottom: 0;
@@ -34,8 +37,6 @@ details[open] i {
 summary {
     all: unset;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
     user-select: none; 
     cursor: pointer;
     display: flex;
@@ -43,7 +44,6 @@ summary {
     align-items: center;
     padding: 30px 0;
     color: var(--cor-fonte-cinza);
-    font-weight: bold;
 
     
 

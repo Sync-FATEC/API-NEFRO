@@ -36,26 +36,27 @@
                 <a href="/cadastro">Cadastrar</a>
                 <a href="/login">Entrar</a>
                 {% else %}
-                <a href="">{{user.user_nome}}</a>
-                <a href="">{{user.user_email}}</a>
+                <a>{{user.user_nome}}</a>
+                <a  >{{user.user_email}}</a>
+                <hr>
+                <a href="/logout">Sair</a>
                 {% endif %}
             </div>
         </div>
     </header>
-    
-    <!-- POP UP DO PYTHON -- CODIGO PRA PASSAR MENSAGEM PARA O USUARIO SE NECESSARIO -->
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-        <ul id="messages" class="list-unstyled">
-        {% for message in messages %}
-            <li class="alert alert-success">{{ message }}</li>
-        {% endfor %}
-        </ul>
-    {% endif %}
-    {% endwith %}
-    <!-- -->
 
     {% block body %}
+        <!-- POP UP DO PYTHON -- CODIGO PRA PASSAR MENSAGEM PARA O USUARIO SE NECESSARIO -->
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul id="messages" class="list-unstyled">
+            {% for message in messages %}
+                <li class="alert alert-success">{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+        <!-- -->
     <!-- CONTEUDO AQUI -->
     {% endblock %}
 

@@ -11,22 +11,22 @@
         <p>Cadastro</p>
         <form action="cadastrar" method="post">
             <label for="nomeCompleto">Nome Completo</label>
-            <input type="text" name="nomeCompleto" id="nomeCompleto">
+            <input required type="text" name="nomeCompleto" id="nomeCompleto">
 
             <label for="dataNascimento">Data de Nascimento</label>
-            <input type="date" name="dataNascimento" id="dataNascimento">
+            <input required type="date" name="dataNascimento" id="dataNascimento">
 
             <label for="cpf">CPF</label>
-            <input type="text" name="cpf" id="cpf" placeholder="123.456.789-00">
+            <input required type="text" name="cpf" id="cpf" placeholder="123.456.789-00">
 
             <label for="endereco">Endereço</label>
-            <input type="text" name="endereco" id="endereco">
+            <input required type="text" name="endereco" id="endereco">
 
             <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
+            <input required type="email" name="email" id="email">
 
             <label for="parentesco">Grau de Parentesco com Paciente</label>
-            <select name="parentesco" id="parentesco" >
+            <select required name="parentesco" id="parentesco" >
                 <option value="">Selecione</option> <!-- Opção nula -->
                 <option value="pai">Pai</option>
                 <option value="mãe">Mãe</option>
@@ -36,10 +36,10 @@
             </select>
 
             <label for="profissao">Profissão</label>
-            <input type="text" name="profissao" id="profissao">
+            <input required type="text" name="profissao" id="profissao">
 
             <label for="comoChegou">Como Chegou ao Site</label>
-            <select name="comoChegou" id="comoChegou">
+            <select required name="comoChegou" id="comoChegou">
                 <option value="">Selecione</option> <!-- Opção nula -->
                 <option value="internet">Internet</option>
                 <option value="redesSociais">Redes Sociais</option>
@@ -48,10 +48,10 @@
             </select>
 
             <label for="senha">Senha</label>
-            <input type="password" name="senha" id="senha">
+            <input required type="password" name="senha" id="senha">
 
             <label for="confirmarSenha">Confirmação de Senha</label>
-            <input type="password" name="confirmarSenha" id="confirmarSenha">
+            <input required type="password" name="confirmarSenha" id="confirmarSenha">
 
             <input type="submit" value="Cadastrar">
         </form>

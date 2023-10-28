@@ -58,14 +58,11 @@ def logar():
 
     if not Usuario.query.filter_by(user_email=email).first():
         flash('Email inexistente')
-        print(1)
         return redirect(url_for('login'))
     elif Usuario.query.filter_by(user_email=email).first().user_senha != senha:
         flash('Senha incorreta')
-        print(2)
         return redirect(url_for('login'))
     else:
         session['user'] = Usuario.query.filter_by(user_email=email).first().user_id
-        print(3)
         return redirect(url_for('index'))
     

@@ -27,6 +27,7 @@ body {
 
 main {
     flex-grow: 1;
+    margin-top: 75px;
 }
 
 h1 {
@@ -77,6 +78,21 @@ li{
 i{
     color: var(--cor-fonte-azul);
 }
+
+/* BARRA DE SCROLL */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  ::-webkit-scrollbar {
+      width: 7px;
+    }
+    
+  ::-webkit-scrollbar-thumb {
+      background-color: var(--cor-fonte-azul);
+      height: 170px;
+  }
+
 /* ------------------------------Header------------------------------ */
 header {
     background-color: var(--cor-fundo-branco);
@@ -86,6 +102,12 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 5px solid var(--cor-fonte-azul);
+    position: fixed;
+    width: calc(100% - 140px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(250, 250, 250, 0.5);
+    user-select: none;
+    z-index: 1;
 }
 
 .logo img {
@@ -139,10 +161,11 @@ header {
     position: absolute;
     display: none;
     background-color: var(--cor-fundo-branco);
-    width: 120px;
+    min-width: 100px;
     border-radius: 25px;
-    padding: 5px;
-    top: 75px; 
+    padding: 15px;
+    top: 75px;
+    right: 65px;
     text-align: center; 
 }
 
@@ -152,6 +175,7 @@ header {
     padding: 5px 0;
     display: block;
     font-size: 18px;
+    text-align: start;
 }
 
 .arrow {
