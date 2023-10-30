@@ -1,23 +1,63 @@
+/* Estilos gerais */
 section {
     padding: var(--padding-fixo);
 }
-select#estadoSelect {
-    border-radius: 10px; 
+
+select#estadoSelect,
+select#filtroEstado {
+    border-radius: 10px;
 }
-option{
+
+option {
     text-align: center;
 }
+
 /* Estilos para o contêiner de resultados */
 #resultadoContainer {
-    font-size: 18px; 
-    border-radius: 10px; 
-    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
 }
 
 .estado {
     font-size: 24px;
     margin-top: 10px;
     margin-bottom: 5px;
-    color:var(--cor-fonte-azul);
+    color: var(--cor-fonte-azul);
     font-weight: bold;
+}
+
+/* Estilo para o contêiner das imagens lado a lado */
+.image-container {
+    display: flex;
+}
+
+/* Estilo para cada div no contêiner das imagens */
+.image-container div {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Estilo para as imagens (dimensionadas para ajustar à largura máxima de 100%) */
+.image-container img {
+    max-width: 100%;
+}
+
+/* Estilo para a legenda das imagens */
+.image-container p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Estilos para as colunas Estado e Pacientes */
+#estadoHeader, #pacientesHeader {
+    display: none;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: var(--cor-fonte-azul);
+    font-weight: bold;
+}
+.container-texto form {
+    display: flex;
+    margin-right: 10px;
 }
