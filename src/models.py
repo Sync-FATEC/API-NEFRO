@@ -15,13 +15,12 @@ class Usuario(db.Model):
     user_como_chegou = db.Column(db.String(50), nullable=False)
 
 class Comentarios(db.Model):
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    texto_comentario = db.Column(db.Text, nullable=False)
-    user_id = db.Column(db.Integer, nullable=False)
-    post_id = db.Column(db.Integer, nullable=False)
-    comentario_para = db.Column(db.Integer, nullable=False)
-    data_postada = db.Column(db.DateTime(timezone=True), default=func.now())
-
-class Post(db.Model):
-    post_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    post_caracters = db.Column(db.Text, nullable=True)
+    com_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    com_historia = db.Column(db.Text, nullable=False)
+    com_data = db.Column(db.Date, nullable=False)
+    com_imagem = db.Column(db.String(255), nullable=True)
+    com_nome_filho = db.Column(db.String(255), nullable=True)
+    com_aprovado = db.Column(db.Boolean, default=False)
+    com_denuncia = db.Column(db.Boolean, default=False)
+    fk_user_id = = db.Column(db.Integer, db.ForeignKey('Usuario.user_id'), nullable=False)
+    fk_com_id = db.Column(db.Integer, db.ForeignKey('Comentarios.com_id'), nullable=True)
