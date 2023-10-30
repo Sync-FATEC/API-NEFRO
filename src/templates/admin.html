@@ -1,0 +1,31 @@
+<!-- {% extends "base.html" %}
+
+{% block head %}
+<title>Administrador</title>
+{% endblock %}
+
+{% block body %}
+<main>
+    <section>
+        <h1>Administrador: {{user_nome}}</h1>
+        
+    </section>
+
+    <section>
+        <h3>Solicitações:</h3>
+        {% if publicacoes == [] %}
+        <p>Não há solicitações!</p>
+        {% else %}
+        {for solicitacao in publicacoes %}
+        <div class="publicacoes">
+            <h5> Publicação de {{ solicitacao.user_nome }}</h5>
+            <p>{{ solicitacao.com_historia }}</p>
+            <div>
+                <a href=""><i class="fa-solid fa-trash"></i></a>
+                <a href=""><i class="fa-solid fa-square-check"></i></a>
+            </div>
+        </div>
+        {% endif %}
+    </section>
+</main>
+{% endblock%} -->

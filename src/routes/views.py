@@ -59,3 +59,8 @@ def perguntasFrequentes():
             conteudoFaq.append([texto[i], texto[i+1]])
    
     return render_template('perguntasFrequentes.html', user = user(), conteudoFaq=conteudoFaq)
+
+@app.route('/admin')
+def admin():
+    publicacoes = Comentarios.query.filter_by(com_denuncia=True).all()
+    return render_template('admin.html', user = user(), publicacoes=publicacoes)
