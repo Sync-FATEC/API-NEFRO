@@ -1,6 +1,6 @@
-// const sideMenu = document.getElementsByClassName('.sideMenu')
-// const sideOption = document.getElementsByClassName('.sideOption')
+const sideMenu = document.querySelector('.sideMenu')
+const sideOption = document.querySelector('.sideOption')
 
-// sideMenu.addEventListener('click', () => {
-//     sideOption.toggle()
-// })
+sideMenu.addEventListener('click', () => {
+    sideOption.classList.toggle('off')
+})

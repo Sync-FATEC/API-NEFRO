@@ -54,7 +54,7 @@ section p{
   margin-bottom: 5px; 
 }
 
-.text1-comunidade .sideOption .deactive {
+.text1-comunidade .sideOption.off {
   display: none;
 }
 
