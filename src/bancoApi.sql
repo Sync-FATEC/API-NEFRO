@@ -4,7 +4,7 @@ create database Api;
 
 use Api;
 
-CREATE TABLE Usuario (
+CREATE TABLE usuario (
 
 user_id int primary key  auto_increment,
 user_nome varchar (100) not null,
@@ -19,7 +19,7 @@ user_como_chegou varchar (50) not null
 );
 
 
-CREATE TABLE Comentarios (
+CREATE TABLE comentarios (
 com_id INT AUTO_INCREMENT PRIMARY KEY,
 com_historia LONGTEXT NOT NULL,
 com_data DATE,
@@ -29,6 +29,6 @@ com_aprovado BOOLEAN default false,
 com_denuncia BOOLEAN default false,
 fk_user_id INT NOT NULL,
 fk_com_id INT,
-FOREIGN KEY (fk_user_id) REFERENCES Usuario(user_id),
-FOREIGN KEY (fk_com_id) REFERENCES Comentarios(com_id)
+FOREIGN KEY (fk_user_id) REFERENCES usuario(user_id),
+FOREIGN KEY (fk_com_id) REFERENCES comentarios(com_id)
 );
