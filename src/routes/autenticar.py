@@ -2,9 +2,15 @@ from app import app, db
 from flask import render_template, request, redirect, url_for, session, flash
 from models import *
 
+def verificarLogin():
+    if 'user' not in session or session['user'] == None:
+        return None
+    else:
+        return Usuario.query.filter_by(user_email=session['user']).first()
+
+
 @app.route('/cadastrar', methods=["POST"])
 def cadastrar():
-    
     # Fazendo requisição do forms no template "cadastro";
     nomeCompleto = request.form["nomeCompleto"]
     dataNascimento = request.form["dataNascimento"]
@@ -30,9 +36,8 @@ def cadastrar():
     # Verificando se as senhas são iguais;
     if senha == confirmarSenha:
         # Jogando as requisições no banco de dados;
-        # Cadastro == nome da nossa tabela;
-        # Info dentro dos parentes == Nome das nossas colunas;
         novoUsuario = Usuario (user_nome=nomeCompleto, user_data_nasc=dataNascimento, user_cpf=cpf, user_endereco=endereco, user_email=email, user_parentesco=parentesco, user_profissao=profissao, user_como_chegou=comoChegou, user_senha=senha)
+
         db.session.add(novoUsuario)
         db.session.commit()
 
@@ -40,7 +45,6 @@ def cadastrar():
 
     else:
          flash('As senhas devem ser identicas!')
-
 
     # Redirecionando para homepage;     
     return redirect(url_for('index'))
@@ -66,3 +70,20 @@ def logar():
         session['user'] = Usuario.query.filter_by(user_email=email).first().user_id
         return redirect(url_for('index'))
     
+@app.route('/postar', methods=["POST"])
+def postagem():
+    fk_user_id = session['user']
+    nome_filho = request.form['nomefilho']
+    data_nasc = request.form['dataNascimentoFilho']
+    com_historia = request.form['historia']
+    # imagem = request.file['custom-file-upload']
+
+    usuario = Usuario.query.filter_by(user_id=fk_user_id).first()
+    nome = usuario.user_nome
+
+    nova_historia = Comentarios(fk_user_id=fk_user_id, com_historia=com_historia, com_nome_filho=nome_filho, com_data=data_nasc)
+
+    db.session.add(nova_historia)
+    db.session.commit()
+
+    return "Postagem bem sucedida!"

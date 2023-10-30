@@ -22,5 +22,5 @@ class Comentarios(db.Model):
     com_nome_filho = db.Column(db.String(255), nullable=True)
     com_aprovado = db.Column(db.Boolean, default=False)
     com_denuncia = db.Column(db.Boolean, default=False)
-    fk_user_id = db.Column(db.Integer, db.ForeignKey('Usuario.user_id'), nullable=False)
-    fk_com_id = db.Column(db.Integer, db.ForeignKey('Comentarios.com_id'), nullable=True)
+    fk_user_id = db.Column(db.Integer, db.ForeignKey('usuario.user_id'), nullable=False)
+    fk_com_id = db.Column(db.Integer, db.ForeignKey('comentarios.com_id'), nullable=True)
