@@ -25,9 +25,8 @@ def comunidade():
         Comentarios.com_aprovado.isnot(False)
         ).all()
 
-    # filtro = filtro.sorted(filtro, reverse=True)
-    print(filtro)
-
+    filtro = list(reversed(filtro))
+    
     return render_template('comunidade.html', user = user(), comentarios=filtro, Usuario=Usuario)
 
 @app.route('/login', methods=['POST', 'GET'])
@@ -47,6 +46,7 @@ def quemsomos():
 def historia(id):
     comentario = Comentarios.query.filter_by(com_id=id).first()
     respostas = Comentarios.query.filter_by(fk_com_id=id).all()
+    respostas = list(reversed(respostas))
     return render_template('historia.html', user = user(), respostas=respostas, comentario=comentario, Usuario=Usuario)
 
 @app.route('/perguntasFrequentes')

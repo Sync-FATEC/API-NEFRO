@@ -53,27 +53,6 @@
         </div>
     </section>
 </section>
-{% if user == None %}
-<section>
-    <h3>Comentários</h3>
-</section>
-<section class="comunidade">
-    <div class="text-comunidade">
-
-            <div class="text1-comunidade">
-                <img src="../static/img/usuario.png" alt="usuario">
-                <p>Ana Letícia de Santos</p>
-            </div>
-
-            <div class="text2-comunidade">
-                <p>A história de superação de Vitor Daniel é emocionante e inspiradora. Ele enfrentou desafios desde o início de sua vida, passando por tratamentos intensos, hemodiálise e finalmente, o tão aguardado transplante renal. Vitor é um verdadeiro guerreiro e sua família demonstra amor inabalável e determinação. Esta história nos lembra a importância da esperança, solidariedade e da luta pela vida. Desejamos a Vitor e sua família muita saúde e felicidade contínua. 💪❤️</p>
-            </div>
-
-    </div>
-   
-
-</section>
-{% else %}
 <section>
     <h3>Comentários</h3>
 </section>
@@ -82,7 +61,7 @@
         <div class="text-blog">
             <div class="text1-comunidade">
                 <img src="../static/img/usuario.png" alt="usuario">
-                <p>{{ user.user_nome }}r</p>
+                <p>{{ user.user_nome }}</p>
             </div>
         <form action="/comentar" method="post">
 
@@ -118,7 +97,6 @@
         textarea.style.height = textarea.scrollHeight + 'px'; // Define a altura com base no conteúdo
         }
 </script>
-{% endif %}
 </main>
 
 {% endblock %}

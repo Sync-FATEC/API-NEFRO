@@ -32,7 +32,7 @@ def comentar():
     usuario = user()
     resposta = request.form['comentario']
     historia = request.form['redirecionar']
-    novo_comentario = Comentarios(fk_user_id=usuario.user_id, com_historia=resposta, fk_com_id=historia)
+    novo_comentario = Comentarios(fk_user_id=usuario.user_id, com_historia=resposta, fk_com_id=historia, com_aprovado=True)
 
     db.session.add(novo_comentario)
     db.session.commit()

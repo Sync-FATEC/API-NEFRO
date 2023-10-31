@@ -3,6 +3,8 @@
 {% block head %}
 <title>Comunidade</title>
 <link rel="stylesheet" href="../static/css/drc.css">
+<script src="../static/js/filtroClinicas.js" defer></script>
+<script src="../static/js/pediatrico_espera.js" defer></script>
 {% endblock %}
 
 {% block body %}
@@ -73,7 +75,6 @@
                 <tbody id="tabelaEstado">
                 </tbody>
             </table>
-            <script src="../static/js/pediatrico_espera.js"></script>
         </section>
         <section class="container-texto">
             <h2>Centrais de transplante</h2>
@@ -111,6 +112,5 @@
             </form>
             <ul id="resultadoContainer"></ul>
         </section>
-        <script src="../static/js/filtroClinicas.js"></script>
 </main>
 {% endblock %}
