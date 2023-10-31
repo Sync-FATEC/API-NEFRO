@@ -5,7 +5,6 @@ from models import *
 def user():
     if 'user' not in session or session['user'] == None:
         user = None
-
     else:
         user = Usuario.query.filter_by(user_id=session['user']).first()
     return user
@@ -62,5 +61,9 @@ def perguntasFrequentes():
 
 @app.route('/admin')
 def admin():
+    usuario = user()
+    if usuario == None or not usuario.user_admin:
+        flash('Você não tem acesso a essa pagina')
+        return redirect(url_for('index'))
     publicacoes = Comentarios.query.filter_by(com_denuncia=True).all()
     return render_template('admin.html', user = user(), publicacoes=publicacoes)

@@ -13,6 +13,7 @@ class Usuario(db.Model):
     user_parentesco = db.Column(db.String(20), nullable=False)
     user_profissao = db.Column(db.String(50), nullable=False)
     user_como_chegou = db.Column(db.String(50), nullable=False)
+    user_admin = db.Column(db.Boolean, default=False)
 
 class Comentarios(db.Model):
     com_id = db.Column(db.Integer, primary_key=True, autoincrement=True)

@@ -15,7 +15,8 @@ user_email varchar (100) not null unique,
 user_senha varchar (26) not null,
 user_parentesco varchar (20) not null,
 user_profissao varchar (50) not null,
-user_como_chegou varchar (50) not null
+user_como_chegou varchar (50) not null,
+user_admin BOOLEAN default false
 );
 
 

@@ -1,12 +1,7 @@
 from app import app, db
 from flask import render_template, request, redirect, url_for, session, flash
 from models import *
-
-def verificarLogin():
-    if 'user' not in session or session['user'] == None:
-        return None
-    else:
-        return Usuario.query.filter_by(user_email=session['user']).first()
+from routes.views import *
 
 
 @app.route('/cadastrar', methods=["POST"])
@@ -86,4 +81,4 @@ def postagem():
     db.session.add(nova_historia)
     db.session.commit()
 
-    return "Postagem bem sucedida!"
+    return redirect(url_for())

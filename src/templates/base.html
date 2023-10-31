@@ -39,6 +39,9 @@
                 <a>{{user.user_nome}}</a>
                 <a  >{{user.user_email}}</a>
                 <hr>
+                {% if user.user_admin %}
+                <a href="/admin">Painel Administrador</a>
+                {% endif %}
                 <a href="/logout">Sair</a>
                 {% endif %}
             </div>
