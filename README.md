@@ -80,82 +80,98 @@
     </tr>
     <tr>
       <td align='center'>2</td>
-      <td align='center'>Criação da Pagina sobre DRC</td>
+      <td align='center'>Criação da Página sobre DRC</td>
       <td>Como visitante do site, gostaria de ter dados informativos sobre DRC de forma prática, para que eu possa visualizar o impacto da doença no Brasil.</td>
       <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>3</td>
-      <td align='center'>Criar permissão por cadastro.</td>
-      <td>Como membro cadastrado do site, quero um local onde possa publicar minhas experiências e interagir com outros usuarios, para que eu possa receber apoio e conselhos de outros na mesma situação.</td>
-      <td align="center">➖</td>
+      <td align='center'>Página para administradores</td>
+      <td>Como administrador do site, quero ter uma tela onde chegue as historias para aprovação ou comentários reportados, para que eu possa ter um conforto melhor no gerenciamento do site</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>3</td>
-      <td align='center'>Modelagem banco de dados cadastrais</td>
-      <td>Eu, enquanto cliente, quero ter acesso a uma comunidade, para conversar com mães/pais que tenham um filho com
-        IRC.</td>
-      <td align="center">➖</td>
+      <td align='center'>Modelagem banco de dados comunidade</td>
+      <td>Como membro cadastrado do site, quero um local onde possa publicar minhas experiências e interagir com outros usuarios, para que eu possa receber apoio e conselhos de outros na mesma situação.</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>3</td>
       <td align='center'>Buscar quantas crianças estão em tratamento conservador</td>
       <td>Como visitante do site, quero poder visualizar quantas crianças estão atualmente em tratamento conservador, afim de levantar dados para pesquisas futuras.</td>
-      <td align="center">➖</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>3</td>
-      <td align='center'>Buscar o número de crianças em fila de transplante no Brasil</td>
+      <td align='center'>Criação funcionalidade do menu</td>
+      <td>Como administrador do site, quero ter acesso a ferramentas que me permitam excluir comentarios e postagens que possam vir a ferir a politica de integridade do site.</td>
+      <td align="center">✔️</td>
+    </tr>
+    <tr>
+      <td align='center'>3</td>
+      <td align='center'>Citar os tratamentos existente</td>
+      <td>Como visitante do site, quero poder visualizar quantas crianças estão atualmente em tratamento conservador, afim de levantar dados para pesquisas futuras. </td>
+      <td align="center">✔️</td>
+    </tr>
+    <tr>
+      <td align='center'>3</td>
+      <td align='center'>Dados da fila de espera de transplante</td>
       <td>Como visitante do site, quero ter acesso ao número de crianças em fila de espera de transplante no Brasil, para, ter uma noção do tempo de espera, e também, a partir dos dados informados trazer a publico a necessidade de aumentar os centros transplantadores.</td>
-      <td align="center">➖</td>
-    </tr>
-    <tr>
-      <td align='center'>3</td>
-      <td align='center'>Coletar o número de clínicas e hospitais que ofertem hemodiálise pediátrica por estado e
-        município</td>
-      <td>Como responsavel de uma criança diagnosticada com DRC, quero ter acesso a clinicas e hospitais que ofertem hemodialise pediátrica, para encontrar tratamento para meu filho.</td>
-      <td align="center">➖</td>
-    </tr>
-    <tr>
-      <td align='center'>3</td>
-      <td align='center'>Índice de mortalidade em crianças com IRC (e onde esse índice é maior)</td>
-      <td>Como visitante do site, gostaria de ter acesso ao índice de mortalidade em crianças com IRC, para levantar de dados para futuras pesquisas.</td>
-      <td align="center">➖</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>3</td>
       <td align='center'>Criar menu de gerenciamento nas postagens para os administradores</td>
-      <td>Como administrador do site, quero ter acesso a ferramentas que me permitam excluir comentarios e postagens que possam vir a ferir a politica de integridade do site.</td>
-      <td align="center">➖</td>
+      <td>Como visitante do site, gostaria de ter uma pagina informando quem está por trás do projeto, para eu poder acompanhar redes sociais</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>3</td>
-      <td align='center'>Implementar tabelas</td>
+      <td align='center'> Página com dados dos responsáveis e idealistas do projeto. </td>
       <td>Como visitante do site, quero ter acesso a informações de DRC por meio de tabelas, a fim de ter as informações de forma visual e pratica sobre o assunto.
       </td>
-      <td align="center">➖</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>3</td>
       <td align='center'>Criar funcionalidade de filtro por região Estado e Municipio</td>
-      <td>Como visitante do site, quero ter acesso a clinicas por região, para buscar a mais proxima a mim.</td>
-      <td align="center">➖</td>
+      <td>Como responsavel de uma criança diagnosticada com DRC, quero ter acesso a clinicas e hospitais que ofertem hemodialise pediátrica, para encontrar tratamento para meu filho.</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>3</td>
-      <td align='center'>Criar funcionalidade de filtro para hospitais que atendam crianças com baixo peso</td>
-      <td>Como visitante do site, quero ter acesso a clinicas que atendam crianças com menos de 10kg, para buscar a clinica que atenda minhas necessidades.</td>
+      <td align='center'>Criar funcionalidade de filtro para índice de mortalidade</td>
+      <td>Como visitante do site, gostaria de ter acesso ao índice de mortalidade em crianças com DRC, para levantar de dados para futuras pesquisas.</td>
+      <td align="center">✔️</td>
+    </tr>
+        <tr>
+      <td align='center'>3</td>
+      <td align='center'>Página com dados e  informações de DRC</td>
+      <td>Como visitante do site, quero ter acesso a informações de DRC, a fim de ter as informações de forma visual ou pratica sobre o assunto.</td>
+      <td align="center">✔️</td>
+    </tr>
+        <tr>
+      <td align='center'>3</td>
+      <td align='center'> Criar metódo para achar clinicas por região</td>
+      <td>Como visitante do site, quero ter acesso a clinicas por região, para buscar a mais proxima a mim.</td>
+      <td align="center">✔️</td>
+    </tr>
+    <tr>
+      <td align='center'>4</td>
+      <td align='center'>Criar sistema de responsividade</td>
+      <td>Como visitante do site, gostaria de uma forma eficaz de visualizar o site em meu celular, para poder acessar as informações onde quer que eu esteja</td>
       <td align="center">➖</td>
     </tr>
     <tr>
       <td align='center'>4</td>
-      <td align='center'>Criação do logo do projeto</td>
+      <td align='center'>Criação do logo</td>
       <td>Como cliente, gostaria de ter uma identidade visual, para representar meu site</td>
       <td align="center">➖</td>
     </tr>
     <tr>
       <td align='center'>4</td>
-      <td align='center'>Revisão e finalização da documentação.</td>
+      <td align='center'>Revisão de todo projeto</td>
       <td>Como cliente, quero ter a documentação do projeto, para saber como utilizar.</td>
       <td align="center">➖</td>
     </tr>
@@ -190,8 +206,8 @@
     <tr>
       <td align="center">03</td>
       <td>05/11/2023</td>
-      <td align="center">➖</td>
-      <td></td>
+      <td><a href="https://github.com/Sync-FATEC/API-NEFRO/blob/main/doc/docs_sprints/sprint03.md">Relatório</a></td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align="center">04</td>
