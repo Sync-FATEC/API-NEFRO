@@ -20,7 +20,10 @@ def drcBrasil():
 @app.route('/comunidade')
 def comunidade():
 
-    filtro = Comentarios.query.filter(Comentarios.fk_com_id.is_(None)).all()
+    filtro = Comentarios.query.filter(
+        Comentarios.fk_com_id.is_(None),
+        Comentarios.com_aprovado.isnot(False)
+        ).all()
 
     # filtro = filtro.sorted(filtro, reverse=True)
     print(filtro)
@@ -64,5 +67,6 @@ def admin():
     if usuario == None or not usuario.user_admin:
         flash('Você não tem acesso a essa pagina')
         return redirect(url_for('index'))
-    publicacoes = Comentarios.query.filter_by(com_denuncia=True).all()
-    return render_template('admin.html', user = user(), publicacoes=publicacoes)
+    denuncias = Comentarios.query.filter_by(com_denuncia=True).all()
+    solicitacoes = Comentarios.query.filter_by(com_aprovado=False).all()
+    return render_template('admin.html', user = user(), Usuario=Usuario, denuncias=denuncias, solicitacoes=solicitacoes)

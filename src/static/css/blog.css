@@ -23,6 +23,7 @@ section p{
     border-radius: 32px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
     border-bottom: 3px solid var(--cor-fonte-azul);
 }  
 .text-comunidade, .text2-comunidade,.text-historia {

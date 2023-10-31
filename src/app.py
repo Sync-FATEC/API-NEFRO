@@ -7,6 +7,7 @@ db = SQLAlchemy(app) # Deixei comentado, para ter a execução é necessário co
 
 from routes.views import *
 from routes.autenticar import *
+from routes.comunidade import *
 
 if __name__ == '__main__':
     app.run(debug=True) 

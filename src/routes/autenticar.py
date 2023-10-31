@@ -70,33 +70,3 @@ def logar():
     else:
         session['user'] = Usuario.query.filter_by(user_email=email).first().user_id
         return redirect(url_for('index'))
-    
-@app.route('/postar', methods=["POST"])
-def postagem():
-    fk_user_id = session['user']
-    nome_filho = request.form['nomefilho']
-    data_nasc = request.form['dataNascimentoFilho']
-    com_historia = request.form['historia']
-    # imagem = request.file['custom-file-upload']
-
-    usuario = Usuario.query.filter_by(user_id=fk_user_id).first()
-    nome = usuario.user_nome
-
-    nova_historia = Comentarios(fk_user_id=fk_user_id, com_historia=com_historia, com_nome_filho=nome_filho, com_data=data_nasc)
-
-    db.session.add(nova_historia)
-    db.session.commit()
-
-    return redirect(url_for('comunidade'))
-
-@app.route('/comentar', methods=["POST"])
-def comentar():
-    usuario = user()
-    resposta = request.form['comentario']
-    historia = request.form['redirecionar']
-    novo_comentario = Comentarios(fk_user_id=usuario.user_id, com_historia=resposta, fk_com_id=historia)
-
-    db.session.add(novo_comentario)
-    db.session.commit()
-
-    return redirect(url_for('historia', id=historia))  

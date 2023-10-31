@@ -25,7 +25,10 @@
                     <button class="sideMenu">
                         <i class="fa-solid fa-ellipsis" style="transform: rotate(90deg);"></i>
                         <div class="sideOption off">
-                            <a href=""><i class="fa-solid fa-triangle-exclamation"></i> Reportar</a>
+                            <a href="/reportar/{{ comentario.com_id }}"><i class="fa-solid fa-triangle-exclamation"></i> Reportar</a>
+                            {% if perfil.user_id == user.user_id %}
+                            <a href="/excluir/{{ comentario.com_id }}?q=True"><i class="fa-solid fa-triangle-exclamation"></i> Excluir</a>
+                            {% endif %}
                         </div>
                     </button>
                 </div>

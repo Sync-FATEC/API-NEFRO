@@ -23,10 +23,10 @@
     <form action="/postar" method="post">
 
         <label for="nomefilho"></label>
-        <input type="text" name="nomefilho" id="nomefilho" placeholder="Nome do filho(a)">
+        <input required type="text" name="nomefilho" id="nomefilho" placeholder="Nome do filho(a)">
 
         <label for="dataNascimentoFilho">Data de Nascimento</label>
-        <input type="date" name="dataNascimentoFilho" id="dataNascimentoFilho" >
+        <input required type="date" name="dataNascimentoFilho" id="dataNascimentoFilho" >
 
         <label class="custom-file-upload">
             <input type="file" id="upload-input" accept="image/*" multiple>
@@ -35,7 +35,7 @@
     </div>
     <div class="text-blog">
         <label for="historia"></label>
-        <textarea name="historia" id="auto-resize-input" oninput="autoResize(this)" placeholder="Digite sua história"></textarea>
+        <textarea required name="historia" id="auto-resize-input" oninput="autoResize(this)" placeholder="Digite sua história"></textarea>
       </div>
       <div class="image-preview" id="image-preview"></div>
       <div class="button-blog">
@@ -71,7 +71,7 @@
 </script>
     {% endif %}
     {% for comentario in comentarios %}
-    <section class="comunidade">
+    <section onclick="window.location = '/historia/{{comentario.com_id}}'" class="comunidade">
             <div class="text-comunidade">
                 {% set perfil = Usuario.query.filter_by(user_id=comentario.fk_user_id).first() %}
                     <div class="text1-comunidade">
