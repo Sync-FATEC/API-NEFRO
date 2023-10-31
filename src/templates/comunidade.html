@@ -70,26 +70,28 @@
     }
 </script>
     {% endif %}
+    {% for comentario in comentarios %}
     <section class="comunidade">
             <div class="text-comunidade">
-
+                {% set perfil = Usuario.query.filter_by(user_id=comentario.fk_user_id).first() %}
                     <div class="text1-comunidade">
                         <img src="../static/img/usuario.png" alt="usuario">
-                        <p>Margarida Braga dos Reis</p>
+                        <p>{{perfil.user_nome}}</p>
                     </div>
 
                     <div class="text2-comunidade">
-                        <p>História do meu filho - Vitor Daniel dos Reis da Silva |
-                            Nascimento: 24/02/2017</p>
+                        <p>História do meu filho - {{comentario.com_nome_filho}} |
+                            Nascimento: {{comentario.com_data.strftime('%d/%m/%Y')}}</p>
                     </div>
 
             </div>
             
-            <a href="/historia">
+            <a href="/historia/{{comentario.com_id}}">
                 <i class="fa-solid fa-chevron-right"></i>
             </a>
 
     </section>
+    {% endfor %}
 </main>
 
   

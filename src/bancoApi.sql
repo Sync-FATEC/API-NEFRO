@@ -28,7 +28,7 @@ com_imagem varchar (255),
 com_nome_filho varchar (255),
 com_aprovado BOOLEAN default false,
 com_denuncia BOOLEAN default false,
-fk_user_id INT NOT NULL,
+fk_user_id INT,
 fk_com_id INT,
 FOREIGN KEY (fk_user_id) REFERENCES usuario(user_id),
 FOREIGN KEY (fk_com_id) REFERENCES comentarios(com_id)

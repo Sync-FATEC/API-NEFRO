@@ -18,10 +18,10 @@ class Usuario(db.Model):
 class Comentarios(db.Model):
     com_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     com_historia = db.Column(db.Text, nullable=False)
-    com_data = db.Column(db.Date, nullable=False)
+    com_data = db.Column(db.Date, nullable=True)
     com_imagem = db.Column(db.String(255), nullable=True)
     com_nome_filho = db.Column(db.String(255), nullable=True)
     com_aprovado = db.Column(db.Boolean, default=False)
     com_denuncia = db.Column(db.Boolean, default=False)
-    fk_user_id = db.Column(db.Integer, db.ForeignKey('usuario.user_id'), nullable=False)
+    fk_user_id = db.Column(db.Integer, db.ForeignKey('usuario.user_id'), nullable=True)
     fk_com_id = db.Column(db.Integer, db.ForeignKey('comentarios.com_id'), nullable=True)

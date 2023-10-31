@@ -19,7 +19,13 @@ def drcBrasil():
 
 @app.route('/comunidade')
 def comunidade():
-    return render_template('comunidade.html', user = user())
+
+    filtro = Comentarios.query.filter(Comentarios.fk_com_id.is_(None)).all()
+
+    # filtro = filtro.sorted(filtro, reverse=True)
+    print(filtro)
+
+    return render_template('comunidade.html', user = user(), comentarios=filtro, Usuario=Usuario)
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
@@ -30,22 +36,15 @@ def login():
 def cadastro():
     return render_template('cadastro.html', user = user())
 
-@app.route('/blog-logado')
-def blog():
-    return render_template('blog-logado.html', user = user())
-
-
-@app.route('/historia-logado')
-def hist():
-    return render_template('historia-logado.html', user = user())
-
 @app.route('/quemsomos')
 def quemsomos():
     return render_template('quemsomos.html', user = user())
 
-@app.route('/historia')
-def historia():
-    return render_template('historia.html', user = user())
+@app.route('/historia/<id>')
+def historia(id):
+    comentario = Comentarios.query.filter_by(com_id=id).first()
+    respostas = Comentarios.query.filter_by(fk_com_id=id).all()
+    return render_template('historia.html', user = user(), respostas=respostas, comentario=comentario, Usuario=Usuario)
 
 @app.route('/perguntasFrequentes')
 def perguntasFrequentes():

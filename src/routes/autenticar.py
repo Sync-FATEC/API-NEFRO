@@ -1,7 +1,13 @@
 from app import app, db
 from flask import render_template, request, redirect, url_for, session, flash
 from models import *
-from routes.views import *
+
+def user():
+    if 'user' not in session or session['user'] == None:
+        user = None
+    else:
+        user = Usuario.query.filter_by(user_id=session['user']).first()
+    return user
 
 
 @app.route('/cadastrar', methods=["POST"])
@@ -81,4 +87,16 @@ def postagem():
     db.session.add(nova_historia)
     db.session.commit()
 
-    return redirect(url_for())
+    return redirect(url_for('comunidade'))
+
+@app.route('/comentar', methods=["POST"])
+def comentar():
+    usuario = user()
+    resposta = request.form['comentario']
+    historia = request.form['redirecionar']
+    novo_comentario = Comentarios(fk_user_id=usuario.user_id, com_historia=resposta, fk_com_id=historia)
+
+    db.session.add(novo_comentario)
+    db.session.commit()
+
+    return redirect(url_for('historia', id=historia))  
