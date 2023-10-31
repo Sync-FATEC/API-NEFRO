@@ -44,11 +44,12 @@
                 </p>
             </div>
             <div class="image-historia">
-                <img class="image" src="../static/img/vitor.png" alt="vitor">
-                <img class="image" src="../static/img/vitor1.png" alt="vitor1">
-                <img class="image" src="../static/img/vitor2.png" alt="vitor2">
-                <img class="image" src="../static/img/vitor3.png" alt="vitor3">
-                <img class="image" src="../static/img/vitor4.png" alt="vitor4">
+                {% if comentario.com_imagem == None %}
+                {% else %}
+                    {% for img in comentario.com_imagem.split() %}
+                    <img class="image" src="{{img}}" alt="vitor">
+                    {% endfor %}
+                {% endif %}
             </div>
         </div>
     </section>

@@ -20,7 +20,7 @@
 </section>
 <section class="blog">
     <div class="text-blog">
-    <form action="/postar" method="post">
+    <form action="/postar" method="post" enctype="multipart/form-data">
 
         <label for="nomefilho"></label>
         <input required type="text" name="nomefilho" id="nomefilho" placeholder="Nome do filho(a)">
@@ -29,7 +29,7 @@
         <input required type="date" name="dataNascimentoFilho" id="dataNascimentoFilho" >
 
         <label class="custom-file-upload">
-            <input type="file" id="upload-input" accept="image/*" multiple>
+            <input type="file" name="upload-input" id="upload-input" accept="image/*" multiple>
             <i class="fa-solid fa-download"></i>
         </label>
     </div>

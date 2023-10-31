@@ -1,6 +1,7 @@
 from app import app, db
 from flask import render_template, request, redirect, url_for, session, flash
 from models import *
+import os
 
 def user():
     if 'user' not in session or session['user'] == None:
@@ -15,12 +16,25 @@ def postagem():
     nome_filho = request.form['nomefilho']
     data_nasc = request.form['dataNascimentoFilho']
     com_historia = request.form['historia']
-    # imagem = request.file['custom-file-upload']
+    imagens = request.files.getlist('upload-input')
+    
+    img_caminho = ''
+    if imagens[0].filename != '':
+        for img in imagens:
+            name = f'imgHist{len(os.listdir(os.path.join("src", "static", "uploads")))+1}.jpg'
+            img.save(os.path.join('src', 'static', 'uploads', name))
+            img_caminho += f'../static/uploads/{name} '
+        img_caminho = img_caminho[:-1]
+
 
     usuario = Usuario.query.filter_by(user_id=fk_user_id).first()
-    nome = usuario.user_nome
 
     nova_historia = Comentarios(fk_user_id=fk_user_id, com_historia=com_historia, com_nome_filho=nome_filho, com_data=data_nasc)
+
+    if img_caminho != '': nova_historia.com_imagem = img_caminho
+
+    if usuario.user_admin == True:
+        nova_historia.com_aprovado = True
 
     db.session.add(nova_historia)
     db.session.commit()
