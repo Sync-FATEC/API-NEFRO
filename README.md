@@ -231,7 +231,8 @@
     <li>Escolha a versão adequada para o seu sistema operacional (por exemplo, MySQL Community Server for Windows, MySQL Community Server for macOS, MySQL Community Server for Linux).</li>
     <li>Siga as instruções para instalar o MySQL no seu sistema operacional.</li>
     <li>Durante o processo de instalação, você será solicitado a configurar uma senha para o usuário root. Anote a senha, pois você precisará dela mais tarde.</li>
-    <li>Para os usuários Windows certifique-se de que o serviço MySQL esteja em execução. Você pode fazer isso pesquisando por "Serviços" na barra de tarefas do seu dispositivo, abrindo o programa "Serviços" e procurando por "MySQL80". Clique com o botão direito sobre ele e inicie o serviço, se não estiver em execução.</li>
+    <li>Para os usuários Windows certifique-se de que o serviço MySQL esteja em execução. Abra o Prompt de Comando como administrador e execute o seguinte comando:</li>
+    <pre><code>setx PATH "%PATH%;C:\Program Files\MySQL\MySQL Server 8.2\bin"</pre></code>
     <li>O MySQL deve estar instalado e em execução no seu sistema. Certifique-se de que o serviço MySQL esteja em execução antes de continuar com as etapas do tutorial.</li>
 </ol>
 
