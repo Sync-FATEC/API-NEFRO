@@ -33,6 +33,10 @@ def cadastrar():
     if Usuario.query.filter_by(user_cpf=cpf).first():
         flash("O cpf inserido já existe, Faça login!")
         return redirect(url_for('login'))
+    
+    if len(cpf) > 11:
+        flash("Número de caracteres inválido! Tamanho exedido.")
+        return redirect(url_for('cadastro'))
 
     # Verificando se as senhas são iguais;
     if senha == confirmarSenha:
@@ -46,6 +50,7 @@ def cadastrar():
 
     else:
          flash('As senhas devem ser identicas!')
+         return redirect(url_for('cadastro'))
 
          
 
