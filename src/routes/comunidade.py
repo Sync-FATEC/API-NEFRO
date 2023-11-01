@@ -21,8 +21,8 @@ def postagem():
     img_caminho = ''
     if imagens[0].filename != '':
         for img in imagens:
-            name = f'imgHist{len(os.listdir(os.path.join("src", "static", "uploads")))+1}.jpg'
-            img.save(os.path.join('src', 'static', 'uploads', name))
+            name = f'imgHist{len(os.listdir(os.path.join("static", "uploads")))+1}.jpg'
+            img.save(os.path.join('static', 'uploads', name))
             img_caminho += f'../static/uploads/{name} '
         img_caminho = img_caminho[:-1]
 

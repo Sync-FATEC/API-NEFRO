@@ -51,7 +51,7 @@ def historia(id):
 
 @app.route('/perguntasFrequentes')
 def perguntasFrequentes():
-    with open('src/static/docs/faq.csv', 'r', encoding= 'UTF-8') as documento:
+    with open('static/docs/faq.csv', 'r', encoding= 'UTF-8') as documento:
         texto = documento.readlines()
         
         conteudoFaq = []
