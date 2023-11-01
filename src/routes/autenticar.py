@@ -47,6 +47,8 @@ def cadastrar():
     else:
          flash('As senhas devem ser identicas!')
 
+         
+
     # Redirecionando para homepage;     
     return redirect(url_for('index'))
 

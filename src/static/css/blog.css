@@ -25,6 +25,7 @@ section p{
     justify-content: space-between;
     cursor: pointer;
     border-bottom: 3px solid var(--cor-fonte-azul);
+    margin-bottom: 20px;
 }  
 .text-comunidade, .text2-comunidade,.text-historia {
     color: var(--cor-fonte-cinza);

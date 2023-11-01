@@ -2,13 +2,13 @@
 
 {% block head %}
 <title>Administrador</title>
+<link rel="stylesheet" href="../static/css/admin.css">
 {% endblock %}
 
 {% block body %}
 <main>
     <section>
         <h1>Administrador: {{ user.user_nome }}</h1>
-        
     </section>
 
     <section>
@@ -16,24 +16,31 @@
         {%for solicitacao in solicitacoes %}
         <div class="publicacoes">
             {% set perfil = Usuario.query.filter_by(user_id=solicitacao.fk_user_id).first() %}
-            <h5> Publicação de {{ perfil.user_nome }}</h5>
-            <p>{{ solicitacao.com_historia }}</p>
             <div>
-                <a href="/excluir/{{ solicitacao.com_id }}"><i class="fa-solid fa-trash"></i></a>
-                <a href="/aceitar/{{ solicitacao.com_id }}"><i class="fa-solid fa-square-check"></i></a>
+                <h5> Publicação de: {{ perfil.user_nome }}</h5>
+                <div class="buttons">
+                    <a href="/excluir/{{ solicitacao.com_id }}"><i class="fa-solid fa-trash"></i></a>
+                    <a href="/aceitar/{{ solicitacao.com_id }}"><i class="fa-solid fa-square-check"></i></a>
+                </div>
             </div>
+            <p>{{ solicitacao.com_historia }}</p>
         </div>
+    </section>
+
+    <section>
         {% endfor %}
         <h3>Denuncia:</h3>
         {%for denuncia in denuncias %}
         <div class="publicacoes">
             {% set perfil = Usuario.query.filter_by(user_id=denuncia.fk_user_id).first() %}
-            <h5> Publicação de {{ perfil.user_nome }}</h5>
-            <p>{{ denuncia.com_historia }}</p>
             <div>
-                <a href="/excluir/{{ denuncia.com_id }}"><i class="fa-solid fa-trash"></i></a>
-                <a href="/tirardenuncia/{{ denuncia.com_id }}"><i class="fa-solid fa-square-check"></i></a>
+                <h5> Publicação de: {{ perfil.user_nome }}</h5>
+                <div class="buttons">
+                    <a href="/excluir/{{ denuncia.com_id }}"><i class="fa-solid fa-trash"></i></a>
+                    <a href="/tirardenuncia/{{ denuncia.com_id }}"><i class="fa-solid fa-square-check"></i></a>
+                </div>
             </div>
+            <p>{{ denuncia.com_historia }}</p>
         </div>
         {% endfor %}
     </section>
