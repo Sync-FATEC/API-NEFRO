@@ -79,6 +79,19 @@ i{
     color: var(--cor-fonte-azul);
 }
 
+#messages {
+    position: fixed;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: var(--cor-fonte-azul);
+}
+
+#messages li {
+    font-size: 20px;
+}
+
 /* BARRA DE SCROLL */
 html {
     scroll-behavior: smooth;
