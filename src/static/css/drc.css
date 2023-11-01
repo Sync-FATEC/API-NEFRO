@@ -26,26 +26,12 @@ option {
     font-weight: bold;
 }
 
-/* Estilo para o contêiner das imagens lado a lado */
 .image-container {
-    display: flex;
+    text-align: center;
 }
 
-/* Estilo para cada div no contêiner das imagens */
-.image-container div {
-    flex: 1;
-    margin-right: 20px;
-}
-
-/* Estilo para as imagens (dimensionadas para ajustar à largura máxima de 100%) */
 .image-container img {
-    max-width: 100%;
-}
-
-/* Estilo para a legenda das imagens */
-.image-container p {
-    margin-top: 10px;
-    font-size: 14px;
+    width: 60%;
 }
 
 /* Estilos para as colunas Estado e Pacientes */
@@ -60,4 +46,8 @@ option {
 .container-texto form {
     display: flex;
     margin-right: 10px;
+}
+.text a  {
+    font-size: 18px;
+    color: var(--cor-fonte-azul);
 }

@@ -208,10 +208,7 @@ header {
     align-items: center;
     column-gap: 30px;
 }
-.container-texto a  {
-    font-size: 18px;
-    color: var(--cor-fonte-azul);
-}
+
 .container-texto{
     padding: var(--padding-fixo);
 }
@@ -231,6 +228,10 @@ header {
     color: var(--cor-fonte-cinza);
     background-color: var(--cor-fundo-branco);
 
+}
+.assistencia a {
+    font-size: 18px;
+    color: var(--cor-fonte-azul);
 }
 
 /* ------------------------------FIM do HOME------------------------------ */
