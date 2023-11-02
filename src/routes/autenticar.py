@@ -35,7 +35,7 @@ def cadastrar():
         return redirect(url_for('login'))
     
     if len(cpf) > 11:
-        flash("Número de caracteres inválido! Tamanho exedido.")
+        flash("Número de caracteres do cpf inválido!")
         return redirect(url_for('cadastro'))
 
     # Verificando se as senhas são iguais;

@@ -20,7 +20,7 @@ section p{
     padding: 30px;
     align-items: center;
     background-color: var(--cor-fundo-branco);
-    border-radius: 32px;
+    border-radius: var(--border-radius);
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -84,7 +84,7 @@ section p{
   padding: 30px;
   flex-direction: column;
   background-color: var(--cor-fundo-branco);
-  border-radius: 32px;
+  border-radius: var(--border-radius);
   display: flex;
   justify-content: space-between;
   border-bottom: 3px solid var(--cor-fonte-azul);

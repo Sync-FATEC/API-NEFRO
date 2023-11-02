@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
-    <script src="https://kit.fontawesome.com/c6d943c8a3.js" crossorigin="anonymous"></script>   
+    <script src="https://kit.fontawesome.com/c6d943c8a3.js" crossorigin="anonymous"></script>  
+    <link rel="shortcut icon" href="../static/img/logo padrao.svg" type="image/x-icon">
     {% block head %}
     <!-- CSS/Scrips/Titles unicos de cada pagina -->
     {% endblock %}
@@ -37,7 +38,6 @@
                 <a href="/login">Entrar</a>
                 {% else %}
                 <a>{{user.user_nome}}</a>
-                <a  >{{user.user_email}}</a>
                 <hr>
                 {% if user.user_admin %}
                 <a href="/admin">Painel Administrador</a>
