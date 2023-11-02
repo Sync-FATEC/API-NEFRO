@@ -31,11 +31,15 @@ def comunidade():
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
+    if user() != None:
+        return redirect(url_for('index'))
     return render_template('login.html', user = user())
 
 # Cadastro de usuarios;
 @app.route('/cadastro')
 def cadastro():
+    if user() != None:
+        return redirect(url_for('index'))
     return render_template('cadastro.html', user = user())
 
 @app.route('/quemsomos')
