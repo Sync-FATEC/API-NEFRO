@@ -131,4 +131,4 @@
   </tr>
   </tbody>
 </table>
-<img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/84a885ae-db40-4175-b702-3bcf346ca604" alt="MVP">
+<img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/ce1e227d-2d9f-4dad-a3b5-dfbb1fb4214b" alt="MVP">
