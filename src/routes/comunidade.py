@@ -66,7 +66,10 @@ def aceitar(id):
 @app.route('/excluir/<id>', methods=['POST', 'GET'])
 def excluir(id):
     historia = Comentarios.query.filter_by(com_id=id).first()
-
+    comentarios = Comentarios.query.filter_by(fk_com_id=id).all()
+    for i in comentarios:
+        db.session.delete(i)
+    db.session.commit()
     db.session.delete(historia)
     db.session.commit()
     
