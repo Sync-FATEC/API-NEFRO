@@ -30,16 +30,32 @@ def cadastrar():
         return redirect(url_for('login'))
     
     # Verificando se o cpf ja existe no banco;
-    if Usuario.query.filter_by(user_cpf=cpf).first():
+    elif Usuario.query.filter_by(user_cpf=cpf).first():
         flash("O cpf inserido já existe, Faça login!")
         return redirect(url_for('login'))
     
-    if len(cpf) > 11:
+    elif len(cpf) > 11:
         flash("Número de caracteres do cpf inválido!")
         return redirect(url_for('cadastro'))
-
+    
+    elif len(nomeCompleto) or len(endereco) or len(email) > 100:
+        flash("Você passou o número maximo de caracteres permitidos!")
+        return redirect(url_for('cadastro'))
+    
+    elif len(profissao) or len(comoChegou) > 50:
+        flash('Você passou o número maximo de caracteres permitidos!')
+        return redirect(url_for('cadastro'))
+    
+    elif len(parentesco) > 20:
+        flash('Você passou o número maximo de caracteres permitidos!')
+        return redirect(url_for('cadastro'))
+    
+    elif len(senha) > 26:
+        flash('Você atingiu o número maximo de caracteres permitidos!')
+        return redirect(url_for('cadastro'))
+    
     # Verificando se as senhas são iguais;
-    if senha == confirmarSenha:
+    elif senha == confirmarSenha:
         # Jogando as requisições no banco de dados;
         novoUsuario = Usuario (user_nome=nomeCompleto, user_data_nasc=dataNascimento, user_cpf=cpf, user_endereco=endereco, user_email=email, user_parentesco=parentesco, user_profissao=profissao, user_como_chegou=comoChegou, user_senha=senha)
 
