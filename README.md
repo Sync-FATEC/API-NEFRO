@@ -242,7 +242,7 @@
 <h3>Passo 4: Clone o Repositório</h3>
 <pre><code>git clone https://github.com/Sync-FATEC/API-NEFRO</code></pre>
 
-<h3>Passo 5: Entre na Pasta src</h3>
+<h3>Passo 5: Entre na Pasta API-NEFRO</h3>
 <pre><code>cd API-NEFRO/</code></pre>
 
 <h3>Passo 6: Crie o Ambiente Virtual</h3>
