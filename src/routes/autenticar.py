@@ -38,20 +38,32 @@ def cadastrar():
         flash("Número de caracteres do cpf inválido!")
         return redirect(url_for('cadastro'))
     
-    elif len(nomeCompleto) or len(endereco) or len(email) > 100:
-        flash("Você passou o número maximo de caracteres permitidos!")
+    elif len(nomeCompleto) > 100:
+        flash("Você passou o número maximo de caracteres permitidos no nome!")
         return redirect(url_for('cadastro'))
     
-    elif len(profissao) or len(comoChegou) > 50:
-        flash('Você passou o número maximo de caracteres permitidos!')
+    elif len(endereco) > 100:
+        flash("Você passou o número maximo de caracteres permitidos no endereço!")
+        return redirect(url_for('cadastro'))
+    
+    elif len(email) > 100:
+        flash("Você passou o número maximo de caracteres permitidos no email!")
+        return redirect(url_for('cadastro'))
+    
+    elif len(profissao)  > 50:
+        flash('Você passou o número maximo de caracteres permitidos na profissão ou no como chegou!')
+        return redirect(url_for('cadastro'))
+    
+    elif len(comoChegou)  > 50:
+        flash('Você passou o número maximo de caracteres permitidos no como chegou!')
         return redirect(url_for('cadastro'))
     
     elif len(parentesco) > 20:
-        flash('Você passou o número maximo de caracteres permitidos!')
+        flash('Você passou o número maximo de caracteres permitidos no parentesco!')
         return redirect(url_for('cadastro'))
     
     elif len(senha) > 26:
-        flash('Você atingiu o número maximo de caracteres permitidos!')
+        flash('Você atingiu o número maximo de caracteres permitidos na senha!')
         return redirect(url_for('cadastro'))
     
     # Verificando se as senhas são iguais;
