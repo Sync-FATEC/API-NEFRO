@@ -31,7 +31,9 @@ option {
 }
 
 .image-container img {
-    width: 60%;
+    width: 70%;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Estilos para as colunas Estado e Pacientes */
@@ -50,4 +52,10 @@ option {
 .text a  {
     font-size: 18px;
     color: var(--cor-fonte-azul);
+}
+
+@media (max-width: 600px) {
+    .image-container img {
+        width: 100%;
+    }
 }

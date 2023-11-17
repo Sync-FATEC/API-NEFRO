@@ -190,4 +190,7 @@ input:focus, textarea:focus, select:focus{
   .fa-chevron-right {
     margin-left: 10px;
   }
+  .custom-file-upload{
+    margin-top: 15px;
+  }
 }

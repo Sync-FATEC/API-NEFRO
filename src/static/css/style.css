@@ -376,6 +376,7 @@ footer {
 .container-equipe{
     padding:0 70px 40px 70px;
     display: flex;
+    gap: 30px;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
@@ -460,7 +461,9 @@ footer {
     footer p {
         text-align: center;
     }
-
+    .footer-center{
+        order: 1;
+    }
     .menuMobileBox {
         flex-direction: column;
         padding-top: 10px;
@@ -481,6 +484,7 @@ footer {
         padding: 5px 30px;
         width: calc(100% - 60px);
     }
+  
 
     .menuMobileBox {
         width: calc(100% - 60px);
@@ -489,7 +493,9 @@ footer {
     li {
         padding: 10px 0px 10px 5px;
     }
-    
+    .container-equipe{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 400px) {
