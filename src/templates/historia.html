@@ -26,15 +26,15 @@
                         <i class="fa-solid fa-ellipsis" style="transform: rotate(90deg);"></i>
                         <div class="sideOption off">
                             <a href="/reportar/{{ comentario.com_id }}"><i class="fa-solid fa-triangle-exclamation"></i> Reportar</a>
-                            {% if perfil.user_id == user.user_id %}
+                            {% if perfil.user_id == user.user_id or perfil.user_admin == False %}
                             <a href="/excluir/{{ comentario.com_id }}?q=True"><i class="fa-solid fa-triangle-exclamation"></i> Excluir</a>
                             {% endif %}
                         </div>
                     </button>
                 </div>
                 <div class="text2-comunidade">
-                    <p>História do meu filho - {{ comentario.com_nome_filho }} |
-                        Nascimento:  {{comentario.com_data.strftime('%d/%m/%Y')}}</p>
+                    <p>História do meu filho - {{ comentario.com_nome_filho }}</p>
+                    <p>Nascimento:  {{comentario.com_data.strftime('%d/%m/%Y')}}</p>
                 </div>
             </div>
 

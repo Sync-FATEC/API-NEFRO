@@ -36,6 +36,11 @@ section p{
     flex-direction: column;
     gap: 20px;
 }
+
+.text-historia {
+  margin: 20px 0;
+}
+
 .text1-comunidade {
     display: flex;
     align-items: center;
@@ -64,11 +69,16 @@ section p{
 .image-historia {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .image {
-    width: 220px;
-    height: 400px;
+    width: auto;
+    max-width: 50%;
+    height: auto;
+    max-height: 300px;
     border-radius: 10px;
+    border: 1px var(--cor-fonte-azul) solid;
 }
 .historia{
     padding: 30px;
@@ -98,6 +108,7 @@ section p{
   display: flex;
   flex-direction: column;
 }
+
 .button-blog{
 padding-top: 20px;
 color: var(--cor-fonte-cinza);
@@ -162,4 +173,21 @@ input:focus, textarea:focus, select:focus{
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+
+@media (max-width:800px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form label:nth-child(3) {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .fa-chevron-right {
+    margin-left: 10px;
+  }
 }

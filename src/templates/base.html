@@ -19,13 +19,16 @@
                 <img src="../static/img/logo padrao.svg" alt="Logo">
             </a>
         </div>
-        <nav class="menu">
+        <nav class="menu"">
             <ul>
                 <li><a href="/drcBrasil">DRC no Brasil</a></li>
                 <li><a href="/comunidade">Comunidade</a></li>
                 <li><a href="/perguntasFrequentes">Perguntas frequentes</a></li>
                 <li><a href="/quemsomos">Quem somos</a></li>
             </ul>
+        </nav>
+        <nav class="menuMobile">
+            <i class="fa-solid fa-bars"></i>
         </nav>
         <div class="profile">
             <button id="menu-button">
@@ -46,6 +49,12 @@
                 {% endif %}
             </div>
         </div>
+        <section class="menuMobileBox">
+            <a href="/drcBrasil">DRC no Brasil</a>
+            <a href="/comunidade">Comunidade</a>
+            <a href="/perguntasFrequentes">Perguntas frequentes</a>
+            <a href="/quemsomos">Quem somos</a>
+        </section>
     </header>
     <!-- POP UP DO PYTHON -- CODIGO PRA PASSAR MENSAGEM PARA O USUARIO SE NECESSARIO -->
     {% with messages = get_flashed_messages() %}

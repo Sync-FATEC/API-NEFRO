@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
-db = SQLAlchemy(app) # Deixei comentado, para ter a execução é necessário configurar o banco;
+db = SQLAlchemy(app)
 
 from routes.views import *
 from routes.autenticar import *
