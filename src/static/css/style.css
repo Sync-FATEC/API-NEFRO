@@ -280,7 +280,8 @@ footer {
     font-size: 20px;
 }
 
-/* PÁGINA QUEM SOMOS */
+/* ----------------------COMEÇO DA PÁGINA QUEM SOMOS------------------------- */
+
 .text-sem-img-background i{
     font-size: 30px;
 }
@@ -303,4 +304,34 @@ footer {
     gap: 10px;
     color: var(--cor-fonte-cinza);
 }
+.modal button {
+    background-color: transparent;
+    border: none;
+}
 
+.modal button i {
+    font-size: 20px;
+}
+.modal {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: var(--cor-fundo-branco);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: var(--border-radius);
+}
+.equipe button{
+    background-color: transparent;
+    border: none;
+    background-color: var(--cor-fundo-branco);
+    padding: 10px;
+    border-radius: 20px;
+}
+.equipe button:hover{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}

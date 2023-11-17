@@ -19,7 +19,6 @@
             <img src="../static/img/logo.svg" alt="rimm" />
         </div>
     </section>
-    <!--fim-->
     <section class="text-sem-img-background">
         
             <h2>Objetivo</h2>
@@ -33,39 +32,62 @@
     <section class="container">
         <div class="text"> 
             <h3>Equipe</h3>
-            <p>Nossa equipe é formada por 5 mães:</p>
+            <p>Mães atípicas, defensoras dos direitos para famílias e pacientes renais cônicos pediátricos.</p>
         </div>
            
      </section>
 
         <section class="container-equipe">
-            <section class="equipe">
+            <section class="equipe" onclick="openModal('myModal1')">
                 <p>Shirlene Giló</p>
-                <img src="../static/img/foto.png" alt="foto mãe">
-                <p>Alagoas</p>
+                <img src="../static/img/img-mae.svg" alt="foto mãe">
+                <button><p>Sobre mim</p></button>
             </section>
-            <section class="equipe">
+            <section class="equipe" onclick="openModal('myModal2')">
                 <p>Vandressa Santos</p>
-                <img src="../static/img/foto.png" alt="foto mãe">
-                <p>Alagoas</p>
+                <img src="../static/img/img-mae1.svg" alt="foto mãe">
+                <button><p>Sobre mim</p></button>
             </section>
-            <section class="equipe">
+            <section class="equipe" onclick="openModal('myModal3')">
                 <p>Silviane Moraes</p>
-                <img src="../static/img/foto.png" alt="foto mãe">
-                <p>Maranhão</p>
+                <img src="../static/img/img-mae2.svg" alt="foto mãe">
+                <button><p>Sobre mim</p></button>
             </section>
-            <section class="equipe">
-                <p>Thaís Ferreira</p>
-                <img src="../static/img/foto.png" alt="foto mãe">
-                <p>Brasília</p>
-            </section>
-            <section class="equipe">
-                <p>Micielle Soares</p>
-                <img src="../static/img/foto.png" alt="foto mãe">
-                <p>São Paulo</p>
+
+            <section class="equipe" onclick="openModal('myModal4')">
+                <p>Micielle Soares </p>
+                <img src="../static/img/img-mae3.svg" alt="foto mãe">
+                <button><p>Sobre mim</p></button>
             </section>
         </section>
-    
+        <div id="myModal1" class="modal">
+            <button onclick="closeModal('myModal1')"><i class="fa-solid fa-x"></i></button>
+            <p>Olá, meu nome é Shirlene Giló tenho 40 anos, sou mãe da Isabel de 12 anos, Davi de 8 e Daniel de 5 aninhos, somos naturais de Alagoas, atualmente em São Paulo há 2 anos. Meu filho Davi é doente renal crônico, no momento encontra-se em hemodiálise diária, aguardando em lista de transplante renal, à espera de que alguém DIGA SIM para doação de órgãos. Sou professora, Mãe atípica e típica, esposa, amiga e defensora de que acesso a saúde NÃO deve ser privilégio e SIM um direito TODOS!</p>
+        </div>
+        <div id="myModal2" class="modal">
+            <button onclick="closeModal('myModal2')"><i class="fa-solid fa-x"></i></button>
+            <p>Olá, meu nome é Vandressa tenho 33 anos e sou natural de Mauá-SP, porém moro em Alagoas desde 2005, onde tive três filhos: Kauana 15 anos, Ágatha 13 anos e Mateus 8 anos. Atualmente trabalho de maneira informal com empreendedorismo devido ao grande fluxo de exames, consultas e terapias no meu dia a dia sendo mãe duplamente atípica (além da doença renal Agatha tem autismo) e ainda me divido aos cuidados das outras duas crianças, escola e afazeres domésticos.</p>
+        </div>
+        <div id="myModal3" class="modal">
+            <button onclick="closeModal('myModal3')"><i class="fa-solid fa-x"></i></button>
+            <p>Olá meu nome é Silviane Moraes, tenho 37 anos, casada, natural de São Luís - MA, atualmente há 7 anos residindo em São Paulo devido ao tratamento de hemodiálise da minha filha caçula Ana Clara de 11 anos diagnosticada com Displasia Renal Bilateral com 8 meses de vida e também mãe de Amanda Cristina de 18 anos. Estou fora do mercado de trabalho devido ao acompanhamento e cuidados diários com Ana Clara que atualmente está em hemodiálise.</p>
+        </div>
+        <div id="myModal4" class="modal">
+            <button onclick="closeModal('myModal4')"><i class="fa-solid fa-x"></i></button>
+            <p>Olá meu nome é Micielle Soares tenho 32 anos, casada, natural de São Paulo. Sou mãe do Romeo de 7 anos que tem doença renal crônica decorrente de Nefrite Intersticial diagnosticado com 1 ano e meio de vida. Sou enfermeira, porém me encontro fora do mercado de trabalho devido ao acompanhamento e cuidados diários do Romeo que atualmente está em Hemodiálise, porém em fila para transplante a espera de um RIM.</p>
+        </div>
+        
+        <script>
+            // Função para abrir o modal
+            function openModal(myModalId) {
+                document.getElementById(myModalId).style.display = 'block';
+            }
+        
+            // Função para fechar o modal
+            function closeModal(myModalId) {
+                document.getElementById(myModalId).style.display = 'none';
+            }
+        </script>
         
    
     
@@ -73,8 +95,8 @@
     <section class="text-sem-img-background">
         
             <h2>Contatos</h2>
-            <p><a href="mailto:rimdoamor@gmail.com"><i class="fa-regular fa-envelope"></i>  rimdoamor@gmail.com</p></a>
-            <p><a href="https://www.instagram.com/rimdoamor/"><i class="fa-brands fa-instagram"></i>   @rimdoamor</p></a>
+            <p><a href="mailto:rimdoamor@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i>  rimdoamor@gmail.com</p></a>
+            <p><a href="https://www.instagram.com/rimdoamor/" target="_blank"><i class="fa-brands fa-instagram"></i>   @rimdoamor</p></a>
       
     </section>
 </main>

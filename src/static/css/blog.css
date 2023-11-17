@@ -72,7 +72,7 @@ section p{
 }
 .historia{
     padding: 30px;
-    border-radius: 30px;
+    border-radius: var(--border-radius);
     background-color: var(--cor-fundo-branco);
 }
 
