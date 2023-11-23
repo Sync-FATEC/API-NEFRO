@@ -410,6 +410,12 @@ footer {
     z-index: 1;
     border-radius: var(--border-radius);
 }
+@media (max-width: 600px) {
+    .modal {
+        width: 80%; 
+        max-width: 300px; 
+    }
+}
 .equipe button{
     background-color: transparent;
     border: none;
