@@ -10,7 +10,7 @@
 </div>
 
 <h2>:movie_camera: MVP </h2>
-<img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/ce1e227d-2d9f-4dad-a3b5-dfbb1fb4214b" alt="MVP">
+<img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/1764ece9-ec1f-4837-9df7-8fbae9d961bf" alt="MVP">
 <h2>:computer: Tecnologias utilizadas: </h2>
 
 <div align="center">
@@ -161,19 +161,19 @@
       <td align='center'>4</td>
       <td align='center'>Criar sistema de responsividade</td>
       <td>Como visitante do site, gostaria de uma forma eficaz de visualizar o site em meu celular, para poder acessar as informações onde quer que eu esteja</td>
-      <td align="center">➖</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>4</td>
       <td align='center'>Criação do logo</td>
       <td>Como cliente, gostaria de ter uma identidade visual, para representar meu site</td>
-      <td align="center">➖</td>
+      <td align="center">✔️</td>
     </tr>
     <tr>
       <td align='center'>4</td>
       <td align='center'>Revisão de todo projeto</td>
       <td>Como cliente, quero ter a documentação do projeto, para saber como utilizar.</td>
-      <td align="center">➖</td>
+      <td align="center">✔️</td>
     </tr>
 
   </tbody>
@@ -212,8 +212,8 @@
     <tr>
       <td align="center">04</td>
       <td>26/11/2023</td>
-      <td align="center">➖</td>
-      <td></td>
+      <td><a href="https://github.com/Sync-FATEC/API-NEFRO/blob/main/doc/docs_sprints/sprint04.md">Relatório</a></td>
+      <td align="center">✔️</td>
     </tr>
   </tbody>
 </table>
