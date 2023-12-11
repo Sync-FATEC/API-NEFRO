@@ -11,13 +11,14 @@
 
 <h2>:movie_camera: MVP </h2>
 <img src="https://github.com/Sync-FATEC/API-NEFRO/raw/main/assets/53847691/1764ece9-ec1f-4837-9df7-8fbae9d961bf" alt="MVP">
-<h2>:computer: Tecnologias utilizadas: </h2>
+<h2>💻Tecnologias utilizadas: </h2>
 
 <div align="center">
   <img src="https://img.shields.io/badge/Microsoft-666666?style=for-the-badge&logo=microsoft&logoColor=white&color=000000">
   <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white&color=000000">
   <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white&color=000000">
   <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white&color=000000">
+  <img src="https://img.shields.io/badge/JavaScript-239120?&style=for-the-badge&logo=javascript&logoColor=white&color=000000">
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white&color=000000">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&color=000000">
   <img src="https://img.shields.io/badge/Mysql-7289DA?style=for-the-badge&logo=mysql&logoColor=white&color=000000">
