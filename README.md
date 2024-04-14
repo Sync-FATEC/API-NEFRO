@@ -26,7 +26,7 @@
   <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white&color=000000">
 </div>
 
-<h2>:clipboard: Blacklog do produto</h2>
+<h2>:clipboard: Backlog do produto</h2>
 
 <table>
   <thead>
