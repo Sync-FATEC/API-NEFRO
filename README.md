@@ -381,8 +381,8 @@ SQLALCHEMY_DATABASE_URI = \
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/filipecolla">
-          <img src="https://avatars.githubusercontent.com/u/74216966?v=4" alt="fotoperfil" width="45">
+        <a href="https://github.com/collafilipe">
+          <img src="https://avatars.githubusercontent.com/u/173160383?v=4" alt="fotoperfil" width="45">
         </a>
       </td>
       <td>Scrum Team</td>
@@ -393,7 +393,7 @@ SQLALCHEMY_DATABASE_URI = \
         </a>
       </td>
       <td>
-        <a href="https://github.com/filipecolla">
+        <a href="https://github.com/collafilipe">
           <img  src='https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&color=000000'>
         </a>
       </td>
